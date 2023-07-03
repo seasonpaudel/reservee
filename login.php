@@ -24,7 +24,7 @@
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <span class="subheading">Login</span>
-            <h2>Log In Our Site</h2>
+            <h2>Log In</h2>
           </div>
         </div>
         <div class="row">

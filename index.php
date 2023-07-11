@@ -57,7 +57,7 @@
                       <option value="Pokhara">Pokhara</option>
                     </select>
                   </div>
-                    <p style="font-size: 20px;color: #000">Location</p>
+                    <p style="font-size: 20px;color: #000">Cuisines</p>
                   <div class="select-wrap one-half">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select data-plugin-selectTwo class="form-control populate" name="area" required=""  style="cursor: pointer;">
@@ -65,7 +65,7 @@
                       <?php 
                         include 'dbCon.php';
                         $con = connect();
-                        $sql = "SELECT * FROM `locations`;";
+                        $sql = "SELECT * FROM `cuisines`;";
                         $result = $con->query($sql);
                         foreach ($result as $r) {
                       ?>

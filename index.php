@@ -41,9 +41,9 @@
     </section>
     <!-- END slider -->
 
-    <div class="ftco-section-reservation">
+    <div class="ftco-section-reservation" style="margin-top: 145px;">
       <div class="container">
-        <div class="row">
+        <div class="row ">
           <div class="col-md-12 reservation pt-5 px-5">
               <p style="font-size: 20px; color: #000;font-weight: bold;margin-top: -30px">Make a Reservation</p>
             <div class="block-17" style="min-height: 100px;">

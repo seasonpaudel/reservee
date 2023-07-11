@@ -40,7 +40,7 @@ if (isset($_POST['find'])) {
                   <div class="select-wrap one-half">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select name="city" id="" class="form-control" disabled="">
-                      <option value="Nepal">Nepal</option>
+                      <option value="Pokhara">Pokhara</option>
                     </select>
                   </div>
                     <p style="font-size: 20px;color: #000">Location</p>

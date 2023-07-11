@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Book a table for yourself at a time convenient for you</h1> 
+              <h1 class="mb-3">Dine in style,book your table with smile</h1> 
             </div>
           </div>
         </div>
@@ -50,11 +50,11 @@
               
               <form action="restaurant-list.php" method="POST" class="d-block d-lg-flex">
                 <div class="fields d-block d-lg-flex">
-                  <p style="font-size: 20px;color: #000">Country</p>
+                  <p style="font-size: 20px;color: #000">City</p>
                   <div class="select-wrap one-half">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select name="city" id="" class="form-control" disabled="">
-                      <option value="Nepal">Nepal</option>
+                      <option value="Pokhara">Pokhara</option>
                     </select>
                   </div>
                     <p style="font-size: 20px;color: #000">Location</p>

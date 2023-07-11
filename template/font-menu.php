@@ -32,7 +32,7 @@
                           <p><span><?php echo $r2['madeby']; ?></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹ <?php echo $r2['price']; ?></span><br> 
+                          <span class="price"> Rs.<?php echo $r2['price']; ?></span><br> 
                         </div> 
                       </div>
                     </div>
@@ -45,7 +45,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹290</span>
+                          <span class="price">Rs.290</span>
                         </div>
                       </div>
                     </div>
@@ -57,7 +57,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹200</span>
+                          <span class="price">Rs.200</span>
                         </div>
                       </div>
                     </div>
@@ -69,7 +69,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹180</span>
+                          <span class="price">Rs.180</span>
                         </div>
                       </div>
                     </div>
@@ -81,7 +81,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹140</span>
+                          <span class="price">Rs.140</span>
                         </div>
                       </div>
                     </div>
@@ -93,7 +93,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹220</span>
+                          <span class="price">Rs.220</span>
                         </div>
                       </div>
                     </div> -->
@@ -113,7 +113,7 @@
                           <p><span><?php echo $r2['madeby']; ?></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹ <?php echo $r2['price']; ?></span><br> 
+                          <span class="price">Rs. <?php echo $r2['price']; ?></span><br> 
                         </div> 
                       </div>
                     </div>
@@ -126,7 +126,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹190</span>
+                          <span class="price">Rs.190</span>
                         </div>
                       </div>
                     </div>
@@ -138,7 +138,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹250</span>
+                          <span class="price">Rs.250</span>
                         </div>
                       </div>
                     </div>
@@ -150,7 +150,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹130</span>
+                          <span class="price">Rs.130</span>
                         </div>
                       </div>
                     </div>
@@ -162,7 +162,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹290</span>
+                          <span class="price">Rs.290</span>
                         </div>
                       </div>
                     </div>
@@ -174,7 +174,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹200</span>
+                          <span class="price">Rs.200</span>
                         </div>
                       </div>
                     </div> -->
@@ -199,7 +199,7 @@
                           <p><span><?php echo $r2['madeby']; ?></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹ <?php echo $r2['price']; ?></span><br> 
+                          <span class="price">Rs.<?php echo $r2['price']; ?></span><br> 
                         </div> 
                       </div>
                     </div>
@@ -212,7 +212,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹290</span>
+                          <span class="price">Rs.290</span>
                         </div>
                       </div>
                     </div>
@@ -224,7 +224,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹399</span>
+                          <span class="price">Rs.399</span>
                         </div>
                       </div>
                     </div>
@@ -236,7 +236,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹320</span>
+                          <span class="price">Rs.320</span>
                         </div>
                       </div>
                     </div>
@@ -248,7 +248,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹220</span>
+                          <span class="price">Rs.220</span>
                         </div>
                       </div>
                     </div>
@@ -260,7 +260,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹280</span>
+                          <span class="price">Rs.280</span>
                         </div>
                       </div>
                     </div> -->
@@ -293,7 +293,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹199</span>
+                          <span class="price">Rs.199</span>
                         </div>
                       </div>
                     </div>
@@ -305,7 +305,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹190</span>
+                          <span class="price">Rs.190</span>
                         </div>
                       </div>
                     </div>
@@ -317,7 +317,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹220</span>
+                          <span class="price">Rs.220</span>
                         </div>
                       </div>
                     </div>
@@ -329,7 +329,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹290</span>
+                          <span class="price">Rs.290</span>
                         </div>
                       </div>
                     </div>
@@ -341,7 +341,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹240</span>
+                          <span class="price">Rs.240</span>
                         </div>
                       </div>
                     </div> -->
@@ -378,7 +378,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹90</span>
+                          <span class="price">Rs.90</span>
                         </div>
                       </div>
                     </div>
@@ -390,7 +390,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹50</span>
+                          <span class="price">Rs.50</span>
                         </div>
                       </div>
                     </div>
@@ -402,7 +402,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹60</span>
+                          <span class="price">Rs.60</span>
                         </div>
                       </div>
                     </div>
@@ -414,7 +414,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹70</span>
+                          <span class="price">Rs.70</span>
                         </div>
                       </div>
                     </div>
@@ -426,7 +426,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹70</span>
+                          <span class="price">Rs.70</span>
                         </div>
                       </div>
                     </div> -->
@@ -459,7 +459,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹50</span>
+                          <span class="price">Rs.50</span>
                         </div>
                       </div>
                     </div>
@@ -471,7 +471,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹60</span>
+                          <span class="price">Rs.60</span>
                         </div>
                       </div>
                     </div>
@@ -483,7 +483,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹80</span>
+                          <span class="price">Rs.80</span>
                         </div>
                       </div>
                     </div>
@@ -495,7 +495,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹80</span>
+                          <span class="price">Rs.80</span>
                         </div>
                       </div>
                     </div>
@@ -507,7 +507,7 @@
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹100</span>
+                          <span class="price">Rs.100</span>
                         </div>
                       </div>
                     </div> -->
@@ -519,3 +519,4 @@
         </div>
       </div>
     </section>
+  

@@ -133,7 +133,7 @@ if (isset($_POST['confirm'])) {
 		            </div>
 	              	<div class="col mb-3 d-flex py-4 border" style="background: white;">
 		                <div class="align-self-center">
-		                  	<p class="mb-0"><span>Total Price:</span> <a href=""><?php echo $total_price; ?> ₹</a></p>
+		                  	<p class="mb-0"><span>Total Price:</span> <a href=""><?php echo $total_price; ?> Rs.</a></p>
 		                </div>
 	              	</div>
 	        	</div>

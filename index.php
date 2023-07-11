@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Book a table for yourself at a time convenient for you</h1>
+              <h1 class="mb-3">Dine in style , book your table with smile.</h1>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Tasty &amp; Delicious Food</h1> 
+              <h1 class="mb-3">Save room for sweet delight , indulge in dessert tonight.</h1> 
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">Dine in style,book your table with smile</h1> 
+              <h1 class="mb-3">No more hassle or delay , reserve your table the modern way.</h1> 
             </div>
           </div>
         </div>

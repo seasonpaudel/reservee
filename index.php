@@ -99,8 +99,6 @@ You can access the most up to date information surrounding COVID-19 via the Worl
     </section>
 
 
-  <?php include 'template/instagram.php'; ?>
-
   <?php include 'template/footer.php'; ?>
 
 

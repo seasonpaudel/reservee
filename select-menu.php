@@ -205,8 +205,6 @@ include 'template/header.php'; ?>
     </section>
     </form>
 
-    <?php include 'template/instagram.php'; ?>
-
     <?php include 'template/footer.php'; ?>
     
     <?php include 'template/script.php'; ?>

@@ -37,7 +37,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
               
               <form action="restaurant-list.php" method="POST" class="d-block d-lg-flex">
                 <div class="fields d-block d-lg-flex">
-                  <p style="font-size: 20px;color: #000">Country</p>
+                  <p style="font-size: 20px;color: #000">City</p>
                   <div class="select-wrap one-half">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select name="city" id="" class="form-control" disabled="">

@@ -79,7 +79,7 @@ INSERT INTO `booking_details` (`id`, `booking_id`, `res_id`, `c_id`, `make_date`
 
 CREATE TABLE `booking_menus` (
   `id` int(11) NOT NULL,
-  `booking_id` varchar(200) DEFAULT NULL,
+  `booking_id` int(11) DEFAULT NULL,
   `item_id` int(11) DEFAULT NULL,
   `qty` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
@@ -89,8 +89,8 @@ CREATE TABLE `booking_menus` (
 --
 
 INSERT INTO `booking_menus` (`id`, `booking_id`, `item_id`, `qty`) VALUES
-(1, '5ccbd8f5609b3', 4, 2),
-(2, '5ccbd8f5609b3', 5, 2);
+(1, '11', 4, 2),
+(2, '12', 5, 2);
 
 -- --------------------------------------------------------
 

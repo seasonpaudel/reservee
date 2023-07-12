@@ -126,8 +126,6 @@ CREATE TABLE `menu_item` (
   `id` int(11) NOT NULL,
   `res_id` int(11) DEFAULT NULL,
   `item_name` varchar(200) DEFAULT NULL,
-  `madeby` varchar(300) DEFAULT NULL,
-  `food_type` varchar(100) NOT NULL,
   `price` float DEFAULT NULL,
   `image` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -136,13 +134,12 @@ CREATE TABLE `menu_item` (
 -- Dumping data for table `menu_item`
 --
 
-INSERT INTO `menu_item` (`id`, `res_id`, `item_name`, `madeby`, `food_type`, `price`, `image`) VALUES
-(4, 4, 'Barbecue chicken (Quarter)', 'Broiler Chicken', 'Fast Food', 90, 'barbecue.jpg'),
-(5, 4, 'Naan', 'Wheat flour (Atta, Maida)', 'Fast Food', 25, 'naan.jpg'),
-(6, 4, 'Chicken Biryani', 'Rice and Chicken', 'Fast Food', 120, 'chicken birayni.jpg'),
-(7, 5, 'Rice (Normal)', 'Rice', 'Fast Food', 30, 'rice.jpg'),
-(8, 5, 'Moong Dal', 'Moong dal', 'Fast Food', 30, 'moong dal.jpg'),
-(9, 5, 'Fish Curry', 'Rui Fish', 'Fast Food', 120, 'fish curry.jpg');
+INSERT INTO `menu_item` (`id`, `res_id`, `item_name`, `price`, `image`) VALUES
+(4, 4, 'Hotpot', 800, 'pothot.jpg'),
+(5, 4, 'Pizza', 750, 'pizza.jpg'),
+(6, 4, 'Sushi', 600, 'sushi.jpg'),
+(7, 5, 'Kimchi jjigae', 300, 'kimchi jjigae.jpg'),
+(8, 5, 'Nepali khana set', 500, 'nepali khana.jpg'),
 
 -- --------------------------------------------------------
 

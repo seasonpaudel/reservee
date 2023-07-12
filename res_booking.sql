@@ -204,7 +204,7 @@ CREATE TABLE `restaurant_info` (
   `id` int(11) NOT NULL,
   `restaurant_name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `phone` varchar(20) NOT NULL,
+  `phone` int(11) NOT NULL,
   `address` varchar(200) NOT NULL,
   `location` varchar(50) NOT NULL,
   `logo` varchar(500) NOT NULL,

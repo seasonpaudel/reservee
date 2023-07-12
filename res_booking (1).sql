@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `booking_chair` (
   `id` int(11) NOT NULL,
-  `booking_id` varchar(200) DEFAULT NULL,
+  `booking_id` int(11) DEFAULT NULL,
   `chair_id` int(11) DEFAULT NULL,
   `chair_no` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
@@ -39,8 +39,8 @@ CREATE TABLE `booking_chair` (
 --
 
 INSERT INTO `booking_chair` (`id`, `booking_id`, `chair_id`, `chair_no`) VALUES
-(1, '5ccbd8f5609b3', 38, 'TBL-4-1'),
-(2, '5ccbd8f5609b3', 39, 'TBL-4-2');
+(1, 11, 38, 'TBL-4-1'),
+(2, 12, 39, 'TBL-4-2');
 
 -- --------------------------------------------------------
 

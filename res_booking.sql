@@ -97,26 +97,24 @@ INSERT INTO `booking_menus` (`id`, `booking_id`, `item_id`, `qty`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `locations`
+-- Table structure for table `cuisines`
 --
 
-CREATE TABLE `locations` (
-  `id` int(11) NOT NULL,
-  `location_name` varchar(100) DEFAULT NULL
+CREATE TABLE `cuisines` (
+  `id` int(12) NOT NULL,
+  `cuisine_name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `locations`
+-- Dumping data for table `cuisines`
 --
 
-INSERT INTO `locations` (`id`, `location_name`) VALUES
-(1, 'Dhanmondi'),
-(2, 'Farmgate'),
-(3, 'Panthapath'),
-(4, 'Mohakhali'),
-(5, 'Mirpur'),
-(6, 'Agargaon'),
-(7, 'Shahbag');
+INSERT INTO `cuisines` (`id`, `cuisine_name`) VALUES
+(1, 'Chinese'),
+(2, 'Italian'),
+(3, 'Japanese'),
+(4, 'Korean'),
+(5, 'Nepali');
 
 -- --------------------------------------------------------
 
@@ -283,9 +281,9 @@ ALTER TABLE `booking_menus`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `locations`
+-- Indexes for table `cuisines`
 --
-ALTER TABLE `locations`
+ALTER TABLE `cuisines`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -335,10 +333,10 @@ ALTER TABLE `booking_menus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `locations`
+-- AUTO_INCREMENT for table `cuisines`
 --
-ALTER TABLE `locations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `cuisines`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `menu_item`

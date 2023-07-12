@@ -174,15 +174,15 @@ if (!isset($_SESSION['isLoggedIn'])) {
                      <select class="form-control " name="area" required="">
                             <option value=""> -Select Restaurant Area- </option>
                             <?php   
-                              $sql = "SELECT * FROM `locations`;";
+                              $sql = "SELECT * FROM `cuisines`;";
                               $result = $con->query($sql);
                               foreach ($result as $r) {
 
-                                if ($row['location']==$r['id']) {
+                                if ($row['cuisine']==$r['id']) {
                                   # code...
-                                   echo  '<option SELECTED value="'.$r['id'].'">'.$r['location_name'].'</option>';
+                                   echo  '<option SELECTED value="'.$r['id'].'">'.$r['cuisine_name'].'</option>';
                                 }else{
-                                     echo  '<option value="'.$r['id'].'">'.$r['location_name'].'</option>';
+                                     echo  '<option value="'.$r['id'].'">'.$r['cuisine_name'].'</option>';
                                 } 
                           } ?>
                          </select>

@@ -104,11 +104,11 @@
                             <?php 
                               include 'dbCon.php';
                               $con = connect();
-                              $sql = "SELECT * FROM `locations`;";
+                              $sql = "SELECT * FROM `cuisines`;";
                               $result = $con->query($sql);
                               foreach ($result as $r) {
                             ?>
-                              <option value="<?php echo $r['id']; ?>"><?php echo $r['location_name']; ?></option>
+                              <option value="<?php echo $r['id']; ?>"><?php echo $r['cuisine_name']; ?></option>
                             <?php } ?>
                          </select>
                         </div>

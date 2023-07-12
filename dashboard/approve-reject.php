@@ -24,7 +24,7 @@
 		// $con = connect();
 		$sql ="UPDATE booking_details SET status = 1 WHERE id = '$id';";
 		
-		$sql2 ="SELECT `id`, `c_id`, (SELECT `restaurent_name` FROM `restaurant_info` WHERE restaurant_info.id= booking_details.c_id) as username,(SELECT `email` FROM `restaurant_info` WHERE restaurant_info.id= booking_details.c_id) as email FROM booking_details WHERE id = '$id';";
+		$sql2 ="SELECT `id`, `c_id`, (SELECT `restaurant_name` FROM `restaurant_info` WHERE restaurant_info.id= booking_details.c_id) as username,(SELECT `email` FROM `restaurant_info` WHERE restaurant_info.id= booking_details.c_id) as email FROM booking_details WHERE id = '$id';";
 		$result= $con->query($sql2);
 		foreach ($result as $r ) {
 			$cname = $r['username'];
@@ -36,7 +36,7 @@
 			include 'mailSender.php'; 
 			$mail->Body = '<html><body>
 	                Hello '.$cname.' . <br>
-					Your booking is confirmed by restaurent. <br>
+					Your booking is confirmed by restaurant. <br>
 					Thank You.
 	                </body></html>'; 
 	            $mail->addAddress($email, "Booking Approve");

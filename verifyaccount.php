@@ -42,7 +42,7 @@ if (isset($_GET['view'])) {
 
 	    foreach ($result as $r) {
 	      $_SESSION['id'] = $r['id'];
-	      $_SESSION['name'] = $r['restaurent_name'];   
+	      $_SESSION['name'] = $r['restaurant_name'];   
 	      $_SESSION['phone'] = $r['phone'];
 	      $_SESSION['email'] = $r['email'];
 	      $_SESSION['password'] = $r['password'];

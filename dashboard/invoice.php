@@ -58,7 +58,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 										?>
 										<div class="col-sm-8 text-right mt-md mb-md">
 											<address class="ib mr-xlg">
-												<b class="text-capitalize"><?php echo $r['restaurent_name']; ?></b>
+												<b class="text-capitalize"><?php echo $r['restaurant_name']; ?></b>
 												<br/>
 												<?php echo $r['address']; ?>
 												<br/>

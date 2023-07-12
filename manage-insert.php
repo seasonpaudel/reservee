@@ -38,7 +38,7 @@ $con = connect();
 				    //register as customer
 				    if ($extension =="jpg" || $extension =="png" || $extension =="jpeg"){
 				    	move_uploaded_file($file_tmp,$targetDirectory.$file_name);
-				    	$iquery="INSERT INTO `restaurant_info`(`restaurent_name`, `email`, `phone`, `address`, `logo`, `password`, `role`) 
+				    	$iquery="INSERT INTO `restaurant_info`(`restaurant_name`, `email`, `phone`, `address`, `logo`, `password`, `role`) 
 			        		VALUES ('$fullname','$email','$phone','$address','$file_name','$password','$role');";
 			        	if ($con->query($iquery) === TRUE) {
 			        		echo '<script>alert("You Register successfully")</script>';
@@ -54,7 +54,7 @@ $con = connect();
 				}else{
 					$file_name = "";
 
-					$iquery="INSERT INTO `restaurant_info`(`restaurent_name`, `email`, `phone`, `address`, `logo`, `password`, `role`) 
+					$iquery="INSERT INTO `restaurant_info`(`restaurant_name`, `email`, `phone`, `address`, `logo`, `password`, `role`) 
 			        		VALUES ('$fullname','$email','$phone','$address','$file_name','$password','$role');";
 		        	if ($con->query($iquery) === TRUE) {
 		        		echo '<script>alert("New faculty added successfully")</script>';
@@ -101,7 +101,7 @@ $con = connect();
 
 				    if ($extension =="jpg" || $extension =="png" || $extension =="jpeg"){
 				    	move_uploaded_file($file_tmp,$targetDirectory.$file_name);
-				    	$iquery="INSERT INTO `restaurant_info`(`restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `role`) 
+				    	$iquery="INSERT INTO `restaurant_info`(`restaurant_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `role`) 
 			        		VALUES ('$fullname','$email','$phone', '$address','$area','$file_name','$password','$role');";
 			        	if ($con->query($iquery) === TRUE) {
 
@@ -144,7 +144,7 @@ $con = connect();
 				}else{
 					$file_name = "";
 
-					$iquery="INSERT INTO `restaurant_info`( `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `role`) 
+					$iquery="INSERT INTO `restaurant_info`( `restaurant_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `role`) 
 		        		VALUES ('$fullname','$email','$phone', '$address','$area', '$file_name','$password','$role');";
 		        	if ($con->query($iquery) === TRUE) {
 		        		echo '<script>alert("New faculty added successfully")</script>';

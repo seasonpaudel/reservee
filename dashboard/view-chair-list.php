@@ -28,7 +28,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Restaurent Tables</span></li>
+								<li><span>Restaurant Tables</span></li>
 								<li><span>Chair List</span></li>
 							</ol>
 					

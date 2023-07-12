@@ -99,7 +99,7 @@ if (isset($_POST['find'])) {
                       <div class="text d-flex">
                         <div class="row one-half">
                         	<div class="col-lg-12">
-                          	<h3><?php echo $r['restaurent_name']; ?></h3>
+                          	<h3><?php echo $r['restaurant_name']; ?></h3>
                       		</div>
                           <div class="col-lg-12">
                             <p><?php echo $r['address']; ?></p>

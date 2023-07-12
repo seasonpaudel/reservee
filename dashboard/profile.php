@@ -41,7 +41,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
             
                 <?php
 
-                // SELECT `id`, `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `approve_status`, `role` FROM `restaurant_info` WHERE 1
+                // SELECT `id`, `restaurant_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `approve_status`, `role` FROM `restaurant_info` WHERE 1
 
                 include 'dbCon.php';
                 $con = connect();
@@ -54,7 +54,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 
                 if (isset($_POST['save'])) {
                   # code...
-                  $sql = "UPDATE `restaurant_info` SET `restaurent_name`='".$_POST['fullname']."',`email`='".$_POST['email']."',`phone`='".$_POST['phone']."',`address`='".$_POST['address']."',`location`='".$_POST['area']."',`password`='".$_POST['password']."' WHERE `id`='$res_id'";
+                  $sql = "UPDATE `restaurant_info` SET `restaurant_name`='".$_POST['fullname']."',`email`='".$_POST['email']."',`phone`='".$_POST['phone']."',`address`='".$_POST['address']."',`location`='".$_POST['area']."',`password`='".$_POST['password']."' WHERE `id`='$res_id'";
                   $cur = $con->query($sql);
                   if ($cur) {
                     # code...
@@ -119,7 +119,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
          
             <li class="list-group-item text-muted">Profile</li> 
             <li class="list-group-item text-right"><span class="pull-left"><strong>Restaurant</strong></span> 
-             <?php echo $row['restaurent_name']; ?> 
+             <?php echo $row['restaurant_name']; ?> 
              </li>
             
           </ul>   
@@ -138,7 +138,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
                   "Fname">Restaurant Name:</label>
 
                   <div class="col-md-8">
-                   <input type="text" name="fullname" class="form-control" required="" placeholder="Restaurant Name" value="<?php echo $row['restaurent_name'];?>">
+                   <input type="text" name="fullname" class="form-control" required="" placeholder="Restaurant Name" value="<?php echo $row['restaurant_name'];?>">
                   </div>
                 </div>
               </div> 

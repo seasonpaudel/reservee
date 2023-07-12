@@ -150,17 +150,7 @@ class SMTP
      */
     public $Timelimit = 300;
 
-    /**
-     * @var array patterns to extract smtp transaction id from smtp reply
-     * Only first capture group will be use, use non-capturing group to deal with it
-     * Extend this class to override this property to fulfil your needs.
-     */
-    protected $smtp_transaction_id_patterns = array(
-        'exim' => '/[0-9]{3} OK id=(.*)/',
-        'sendmail' => '/[0-9]{3} 2.0.0 (.*) Message/',
-        'postfix' => '/[0-9]{3} 2.0.0 Ok: queued as (.*)/'
-    );
-
+    
     /**
      * The socket for the server connection.
      * @var resource
@@ -1245,9 +1235,7 @@ class SMTP
             return null;
         }
 
-        foreach ($this->smtp_transaction_id_patterns as $smtp_transaction_id_pattern) {
-            if (preg_match($smtp_transaction_id_pattern, $reply, $matches)) {
-                return $matches[1];
+        
             }
         }
 

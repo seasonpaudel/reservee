@@ -10,13 +10,6 @@ if (isset($_POST['confirm'])) {
   $reservation_date = $_POST['reservation_date'];
   $reservation_time = $_POST['reservation_time'];
 
-  $bkashnumber = '';
-  $Rinsql = "SELECT * from restaurant_info WHERE id = '$res_id';";
-  $Rinresult = $con->query($Rinsql);
-  foreach ($Rinresult as $rri) {
-    $bkashnumber = $rri['bkashnumber'];
-  }
-
   $table = $_POST["table"];
   $chair = $_POST["chair"];
    
@@ -138,34 +131,11 @@ if (isset($_POST['confirm'])) {
 	              	</div>
 	        	</div>
           	</div>
-<!--             <div class="col-md-12">
-              <div class="col mb-3 border" style="background: white;">
-                  <h3 class="text-center">Pay First</h3>
-                  <div class="row">
-                      <div class="col-md-6" style="text-align: center;">
-                        <img style="height: 100px; width: 152px;" src="images/bkash-logo.png">
-                        <p class="text-center">Account Number:</p>
-                        <h6 class="text-center"><?php echo $bkashnumber; ?></h6>
-                      </div>
-                      <div class="col-md-6">
-                        <h6>Procedure:</h6>
-                        <ol>
-                          <li>send money</li>
-                          <li>netbanking</li>
-                          <li>upi</li>
-                          <li>wallet</li>
-                          <li>paytm</li>
-                          <li>Enter  transaction number</li>
-                        </ol>
-                      </div>
-                  </div>
-              </div>
-            </div> -->
+
             
           	<form action="manage-insert.php" method="POST">
 	          	<div class="col-lg-12" style="text-align: center;">
                 <div class="form-group">
-                  <input type="text" name="transaction_id" class="form-control" placeholder="Transaction Id" required="">
                 </div>
 	                <input type="hidden" name="res_id" value="<?php echo $res_id; ?>">
 	                <input type="hidden" name="total_price" value="<?php echo $total_price; ?>">

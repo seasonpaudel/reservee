@@ -9,7 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
-START TRANSACTION;
+
 SET time_zone = "+00:00";
 
 
@@ -51,17 +51,16 @@ INSERT INTO `booking_chair` (`id`, `booking_id`, `chair_id`, `chair_no`) VALUES
 
 CREATE TABLE `booking_details` (
   `id` int(11) NOT NULL,
-  `booking_id` varchar(200) DEFAULT NULL,
+  `booking_id` int(11) DEFAULT NULL,
   `res_id` int(11) DEFAULT NULL,
   `c_id` int(11) DEFAULT NULL,
   `make_date` date DEFAULT NULL,
   `make_time` varchar(50) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
-  `phone` varchar(100) DEFAULT NULL,
+  `phone` int(11) DEFAULT NULL,
   `booking_date` date DEFAULT NULL,
   `booking_time` varchar(30) DEFAULT NULL,
   `bill` float DEFAULT NULL,
-  `transactionid` varchar(100) DEFAULT NULL,
   `status` int(11) NOT NULL DEFAULT '0' COMMENT '0- reject, 1-confirmed',
   `reject` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -70,8 +69,8 @@ CREATE TABLE `booking_details` (
 -- Dumping data for table `booking_details`
 --
 
-INSERT INTO `booking_details` (`id`, `booking_id`, `res_id`, `c_id`, `make_date`, `make_time`, `name`, `phone`, `booking_date`, `booking_time`, `bill`, `transactionid`, `status`, `reject`) VALUES
-(1, '5ccbd8f5609b3', 4, 9, '2019-05-03', '12:00:21pm', 'Ratan', '01516189260', '2019-05-04', '1:15pm', 230, 'trxoodkf', 1, 0);
+INSERT INTO `booking_details` (`id`, `booking_id`, `res_id`, `c_id`, `make_date`, `make_time`, `name`, `phone`, `booking_date`, `booking_time`, `bill`, `status`, `reject`) VALUES
+(1, 12, 4, 8, '2023-05-08', '12:30:20pm', 'Jack', '987568978', '2023-05-09', '1:15:00pm', 970, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -126,6 +125,8 @@ CREATE TABLE `menu_item` (
   `id` int(11) NOT NULL,
   `res_id` int(11) DEFAULT NULL,
   `item_name` varchar(200) DEFAULT NULL,
+  `madeby` varchar(300) DEFAULT NULL,
+  `food_type` varchar(100) NOT NULL,
   `price` float DEFAULT NULL,
   `image` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -134,12 +135,12 @@ CREATE TABLE `menu_item` (
 -- Dumping data for table `menu_item`
 --
 
-INSERT INTO `menu_item` (`id`, `res_id`, `item_name`, `price`, `image`) VALUES
-(4, 4, 'Hotpot', 800, 'pothot.jpg'),
-(5, 4, 'Pizza', 750, 'pizza.jpg'),
-(6, 4, 'Sushi', 600, 'sushi.jpg'),
-(7, 5, 'Kimchi jjigae', 300, 'kimchi jjigae.jpg'),
-(8, 5, 'Nepali khana set', 500, 'nepali khana.jpg'),
+INSERT INTO `menu_item` (`id`, `res_id`, `item_name`,'madeby','food_type', `price`, `image`) VALUES
+(4, 1, 'Hotpot','Soup','non-veg' 800, 'pothot.jpg'),
+(5, 2, 'Pizza','Cheese','non-veg', 750, 'pizza.jpg'),
+(6, 3, 'Sushi','Fish','non-veg', 600, 'sushi.jpg'),
+(7, 4, 'Kimchi jjigae','Kimchi','non-veg','300, 'kimchi jjigae.jpg'),
+(8, 5, 'Nepali khana set','Rice','dinner', 500, 'nepali khana.jpg'),
 
 -- --------------------------------------------------------
 
@@ -206,10 +207,9 @@ CREATE TABLE `restaurant_info` (
   `email` varchar(255) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
   `address` varchar(200) DEFAULT NULL,
-  `location` int(11) NOT NULL,
+  `location` varchar(50) NOT NULL,
   `logo` varchar(500) DEFAULT NULL,
   `password` varchar(200) DEFAULT NULL,
-  `bkashnumber` varchar(20) DEFAULT NULL,
   `approve_status` int(11) NOT NULL DEFAULT '0' COMMENT '0-not approve,1-approve ',
   `role` int(20) DEFAULT NULL COMMENT '1 = restaurant, 2 = customer '
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -218,15 +218,13 @@ CREATE TABLE `restaurant_info` (
 -- Dumping data for table `restaurant_info`
 --
 
-INSERT INTO `restaurant_info` (`id`, `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `bkashnumber`, `approve_status`, `role`) VALUES
-(4, 'Park View Restaurant', 'park@gmail.com', '01821356478', '26 Indira Rd, Dhaka 1215', 2, 'park.jpg', '123', '01821356478', 0, 1),
-(5, 'New Purabi Hotel And Restaurant', 'newpurabi@gmail.com', '01751235864', 'Farmgate - Tejturi Bazar Rd, 49, East Tejturi Bazar, Farmgate, Tejgaon, Dhaka 1215', 2, 'new purobi.jpg', '123', '01751235864', 0, 1),
-(6, 'Bibiana Tehari & Biriyani Ghar', 'bibiana@gmail.com', '01514569852', '27/1, Indira Road, Farm Gate, Dhaka 1215', 2, 'bibiana.jpg', '123', '01514569852', 0, 1),
-(7, 'Ancholik Khana', 'ancholik@gmail.com', '01614552245', 'H.No 69, Road, R/A, 2 Niribili Project, Dhaka 1207', 1, 'ancholik.jpg', '123', '01614552245', 0, 1),
-(8, 'Bar B Q Tonite', 'barbq@gmail.com', '01711555263', 'House No.58, Road No.16 (NEW) , 27(OLD Dhanmondi R/A, Dhaka 1209', 1, 'barbq.jpg', '123', '01711555263', 0, 1),
-(9, 'Ratan', 'ratan.hazra004@gmail.com', '01516189260', '44/2, Indira Road, Rajabazar, Farmgate', 0, 'chicken birayni.jpg', '123', NULL, 0, 2),
-(10, 'Cloud Bistro', 'cloud@gmail.com', '01811555666', 'Rowshan Tower, 152/2A-2 (1st Floor, Panthapath Road, Dhaka 1205', 3, 'cloud.jpg', '123', '01811555666', 0, 1),
-(11, 'Panthasala', 'panthasala@gmial.com', '01511444852', '57/8, East Rajabazar, West, Panthapath, Dhaka 1215', 3, 'panthasala.jpg', '123', '01511444852', 0, 1);
+INSERT INTO `restaurant_info` (`id`, `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `approve_status`, `role`) VALUES
+(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', '061547985', 'Gaurighat', 'Lakeside', 'china.jpeg', '123', 0, 1),
+(2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road','Lakeside','italia.jpg', '123', 0, 1),
+(3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga','New Road','luffy.jpg', '123', 0, 1),
+(4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside','Birauta','korea.jpg', '123', 0, 1),
+(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga','AmarSingh','nepal.jpg', '123', 0, 1);
+
 
 -- --------------------------------------------------------
 
@@ -253,7 +251,7 @@ INSERT INTO `restaurant_tables` (`id`, `res_id`, `table_name`) VALUES
 (8, 5, 'TBL-2'),
 (9, 5, 'TBL-3'),
 (10, 5, 'TBL-4'),
-(11, 7, 'TBL-1');
+(11, 5, 'TBL-1');
 
 --
 -- Indexes for dumped tables

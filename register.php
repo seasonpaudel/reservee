@@ -95,10 +95,7 @@
                         <div class="form-group">
                           <input type="text" name="phone" class="form-control" required="" placeholder="Restaurant Phone">
                         </div>
-                 <!--        <div class="form-group">
-                          <input type="text" name="bkashnumber" class="form-control" required="" placeholder="Restaurant Bkash Number">
-                        </div> -->
-                        <div class="form-group">
+                       <div class="form-group">
                           <select class="form-control " name="area" required="">
                             <option value=""> -Select Restaurant Area- </option>
                             <?php 

@@ -41,7 +41,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
             
                 <?php
 
-                // SELECT `id`, `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `bkashnumber`, `approve_status`, `role` FROM `restaurant_info` WHERE 1
+                // SELECT `id`, `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `approve_status`, `role` FROM `restaurant_info` WHERE 1
 
                 include 'dbCon.php';
                 $con = connect();

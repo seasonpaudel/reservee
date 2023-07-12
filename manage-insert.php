@@ -71,7 +71,6 @@ $con = connect();
         $fullname = $_POST['fullname'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
-        // $bkashnumber = $_POST['bkashnumber'];
         $address = $_POST['address'];
         $area = $_POST['area'];
         $password = $_POST['password'];
@@ -170,15 +169,15 @@ $con = connect();
 		$reservation_date = $_POST['reservation_date'];
 		$reservation_time = $_POST['reservation_time'];
 		$total_price = $_POST['total_price'];
-		$transactionid = $_POST['transaction_id'];
+		
 
 		date_default_timezone_set("Asia/Dhaka");
          $make_time =date("h:i:sa");
          $make_date =date("Y-m-d");
 		$booking_id= uniqid();
 
-		$iquery="INSERT INTO `booking_details`(`booking_id`,`res_id`,`c_id`,`make_date`, `make_time`, `name`, `phone`, `booking_date`, `booking_time`, `bill`,`transactionid`) 
-		    VALUES ('$booking_id','$res_id','$u_id','$make_date','$make_time','$reservation_name','$reservation_phone','$reservation_date','$reservation_time','$total_price','$transactionid');";
+		$iquery="INSERT INTO `booking_details`(`booking_id`,`res_id`,`c_id`,`make_date`, `make_time`, `name`, `phone`, `booking_date`, `booking_time`, `bill`) 
+		    VALUES ('$booking_id','$res_id','$u_id','$make_date','$make_time','$reservation_name','$reservation_phone','$reservation_date','$reservation_time','$total_price');";
 		if ($con->query($iquery) === TRUE) {
 			$bdinsert = true;
 		}else {

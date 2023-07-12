@@ -97,24 +97,26 @@ INSERT INTO `booking_menus` (`id`, `booking_id`, `item_id`, `qty`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cuisines`
+-- Table structure for table `locations`
 --
 
-CREATE TABLE `Cuisines` (
+CREATE TABLE `locations` (
   `id` int(11) NOT NULL,
-  `cuisine_name` varchar(100) DEFAULT NULL
+  `location_name` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `cuisines`
+-- Dumping data for table `locations`
 --
 
-INSERT INTO `Cuisines` (`id`, `cuisine_name`) VALUES
-(1, 'Chinese'),
-(2, 'Italian'),
-(3, 'Japanese'),
-(4, 'Korean'),
-(5, 'Nepali');
+INSERT INTO `locations` (`id`, `location_name`) VALUES
+(1, 'Dhanmondi'),
+(2, 'Farmgate'),
+(3, 'Panthapath'),
+(4, 'Mohakhali'),
+(5, 'Mirpur'),
+(6, 'Agargaon'),
+(7, 'Shahbag');
 
 -- --------------------------------------------------------
 

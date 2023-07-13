@@ -88,7 +88,6 @@
       <div class="container special-dish"> 
            
             <h3 style="text-align: center;">About Us</h3> 
-            Usually, we're all about getting out more. But these are unprecedented times. <br/>
 
 Welcome to Reservé,the ultimate multi restaurant reservation web application.With a wide range of culinary options, Reservé offers a variety of cuisines to satisfy your cravings.Whether you're in the mood for Chinese,Italian,Japanese,Korean or Nepali,our user friendly interface makes it effortless to browse and reserve a table at your favourite restaurant.Join Reservé today and embark on a delightful dining journey with us. 
       </div>

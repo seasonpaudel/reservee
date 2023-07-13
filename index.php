@@ -94,8 +94,6 @@ Welcome to Reservé,the ultimate multi restaurant reservation web application.Wi
     </section>
 
 
-  <?php include 'template/footer.php'; ?>
-
 
   <?php include 'template/script.php'; ?>
   

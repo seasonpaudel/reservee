@@ -28,7 +28,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
       </div>
     </section>
 
-     <div class="ftco-section-reservation"   >
+     <div class="ftco-section-reservation" style="margin-top: 145px;  >
       <div class="container">
         <div class="row">
           <div class="col-md-12 reservation pt-5 px-5">

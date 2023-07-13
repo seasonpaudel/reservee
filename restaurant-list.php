@@ -119,7 +119,7 @@ if (isset($_POST['find'])) {
       </div>
     </section>
 
-    <?php include 'template/footer.php'; ?>
+
     
     <?php include 'template/script.php'; ?>
     

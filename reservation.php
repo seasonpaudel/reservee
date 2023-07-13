@@ -134,7 +134,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
       </div>
     </section>
 
-    <?php include 'template/footer.php'; ?>
+  
     
     <?php include 'template/script.php'; ?>
 

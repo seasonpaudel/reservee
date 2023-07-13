@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-10 col-sm-12 ftco-animate">
-              <h1 class="mb-3">No more hassle or delay , reserve your table the modern way.</h1> 
+              <h1 class="mb-3" style="font-family: 'Courier New', Courier, monospace;">No more hassle or delay , reserve your table the modern way.</h1> 
             </div>
           </div>
         </div>
@@ -65,8 +65,14 @@
                       <?php 
                         include 'dbCon.php';
                         $con = connect();
-                        $sql = "SELECT * FROM `Cuisines`;";
-                        $result = $con->query($sql);
+                        $sql = "SELECT * FROM `cuisines` where 1;";
+$result = $con->query($sql);
+$row =mysqli_fetch_array($result);
+
+
+                        print_r($row);
+                        
+
                         foreach ($result as $r) {
                       ?>
                         <option value="<?php echo $r['id']; ?>"><?php echo $r['cuisine_name']; ?></option>
@@ -87,7 +93,7 @@
     <section class="ftco-section bg-light">
       <div class="container special-dish"> 
            
-            <h3 style="text-align: center;">About Us</h3> 
+            <h3  style="text-align: center;">About Us</h3> 
 
 Welcome to Reservé,the ultimate multi restaurant reservation web application.With a wide range of culinary options, Reservé offers a variety of cuisines to satisfy your cravings.Whether you're in the mood for Chinese,Italian,Japanese,Korean or Nepali,our user friendly interface makes it effortless to browse and reserve a table at your favourite restaurant.Join Reservé today and embark on a delightful dining journey with us. 
       </div>

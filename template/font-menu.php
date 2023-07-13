@@ -20,7 +20,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                        <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'Fast Food' LIMIT 5";
+                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'non-veg' LIMIT 5";
                       $result2 = $con->query($sql2);
                       foreach ($result2 as $r2) {
                     ?>
@@ -38,14 +38,14 @@
                     </div>
                     <?php } ?>
                     <!-- <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-3.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/pothot.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Grilled Beef with potatoes</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                          <h3>Hotpot</h3>
+                          <><span>Soup</span>, 
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.290</span>
+                          <span class="price">Rs.800</span>
                         </div>
                       </div>
                     </div>

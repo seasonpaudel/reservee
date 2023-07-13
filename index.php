@@ -87,14 +87,10 @@
     <section class="ftco-section bg-light">
       <div class="container special-dish"> 
            
-            <h3 style="text-align: center;">Our Specialties</h3> 
+            <h3 style="text-align: center;">About Us</h3> 
             Usually, we're all about getting out more. But these are unprecedented times. <br/>
 
-We intend to do everything we can to support our restaurant partners in what is an extremely challenging time for the industry. Please remember that supporting restaurants does not necessarily mean dining out right now, and we would encourage our users to look out for any opportunity to do this - whether that is through buying vouchers to use at a later date, or ordering delivery. If you choose to spread the word on social media around how you’re supporting restaurants, please do let us know and we’ll continue to amplify these messages wherever we’re able.<br/>
-
-We will of course continue to monitor the situation, and adapt as quickly and as sensitively as possible. In terms of our social media and email, you won’t hear the same messaging from us that you’re used to. Right now, we’re solely focused on what’s best for both diners and restaurants.<br/>
-
-You can access the most up to date information surrounding COVID-19 via the World Health Organization, as well as the government's website. We’d urge our entire dining community to keep themselves informed at this time. 
+Welcome to Reservé,the ultimate multi restaurant reservation web application.With a wide range of culinary options, Reservé offers a variety of cuisines to satisfy your cravings.Whether you're in the mood for Chinese,Italian,Japanese,Korean or Nepali,our user friendly interface makes it effortless to browse and reserve a table at your favourite restaurant.Join Reservé today and embark on a delightful dining journey with us. 
       </div>
     </section>
 

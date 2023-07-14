@@ -20,7 +20,7 @@
                 <div class="row">
                 <div class="col-lg-6">
   <?php 
-  $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'non-veg' LIMIT 5,5";
+  $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'non-veg' LIMIT 5";
   $result2 = $con->query($sql2);
   foreach ($result2 as $r2) {
   ?>

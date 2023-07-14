@@ -123,7 +123,7 @@
   </div>
  <?php } ?>
      <!--  <div class="menus d-flex ftco-animate">
-  <div class="menu-img" style="background-image: url(images/khana.jpg);"></div>
+  <div class="menu-img" style="background-image: url(images/.jpg);"></div>
   <div class="text d-flex">
     <div class="one-half">
       <h3>Nepali khana set</h3>

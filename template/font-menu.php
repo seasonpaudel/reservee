@@ -25,7 +25,7 @@
   foreach ($result2 as $r2) {
   ?>
   <div class="menus d-flex ftco-animate">
-    <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r2['image']; ?>);"></div>
+    <div class="menu-img" style="background-image: url(dashboard/images/<?php echo $r2['images']; ?>);"></div>
     <div class="text d-flex">
       <div class="one-half">
         <h3><?php echo $r2['item_name']; ?></h3>
@@ -108,7 +108,7 @@
   foreach ($result2 as $r2) {
   ?>
   <div class="menus d-flex ftco-animate">
-    <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r2['image']; ?>);"></div>
+    <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r2['images']; ?>);"></div>
     <div class="text d-flex">
       <div class="one-half">
         <h3><?php echo $r2['item_name']; ?></h3>

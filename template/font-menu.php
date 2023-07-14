@@ -18,98 +18,92 @@
             <div class="tab-content py-5" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 <div class="row">
-                  <div class="col-lg-6">
-                       <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'non-veg' LIMIT 5";
-                      $result2 = $con->query($sql2);
-                      foreach ($result2 as $r2) {
-                    ?>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r2['image']; ?>);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3><?php echo $r2['item_name']; ?></h3>
-                          <p><span><?php echo $r2['madeby']; ?></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price"> Rs.<?php echo $r2['price']; ?></span><br> 
-                        </div> 
-                      </div>
-                    </div>
-                    <?php } ?>
-                    </div>
-            </div>
-          </div>
-        </div>
+                <div class="col-lg-6">
+  <?php 
+  $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'non-veg' LIMIT 5,5";
+  $result2 = $con->query($sql2);
+  foreach ($result2 as $r2) {
+  ?>
+  <div class="menus d-flex ftco-animate">
+    <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r2['image']; ?>);"></div>
+    <div class="text d-flex">
+      <div class="one-half">
+        <h3><?php echo $r2['item_name']; ?></h3>
+        <?php if (isset($r2['madeby'])) { ?>
+          <p><span><?php echo $r2['madeby']; ?></span></p>
+        <?php } ?>
       </div>
+      <div class="one-forth">
+        <span class="price"> Rs.<?php echo $r2['price']; ?></span><br> 
+      </div> 
     </div>
   </div>
-</section>
+ <?php } ?>
                     <!-- <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/pothot.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Hotpot</h3>
-                          <><span>Soup</span>, 
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.800</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-4.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Fruit Vanilla Ice Cream</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.200</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-5.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Asian Hoisin Pork</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.180</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-6.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Spicy Fried Rice &amp; Bacon</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.140</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-7.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Mango Chili Chutney</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.220</span>
-                        </div>
-                      </div>
-                    </div> -->
+  <div class="menu-img" style="background-image: url(images/pothot.jpg);"></div>
+  <div class="text d-flex">
+    <div class="one-half">
+      <h3>Hotpot</h3>
+      <p><span>Soup</span>,<span>Meat</span></p>
+    </div>
+    <div class="one-forth">
+      <span class="price">Rs.800</span>
+    </div>
+  </div>
+</div>
+<div class="menus d-flex ftco-animate">
+  <div class="menu-img" style="background-image: url(images/chocochip icecream.jpg);"></div>
+  <div class="text d-flex">
+    <div class="one-half">
+      <h3>Chocochip Ice Cream</h3>
+      <p><span>Whipped cream</span>, <span>Chocochip</span></p>
+    </div>
+    <div class="one-forth">
+      <span class="price">Rs.180</span>
+    </div>
+  </div>
+</div>
+<div class="menus d-flex ftco-animate">
+  <div class="menu-img" style="background-image: url(images/ribs.jpg);"></div>
+  <div class="text d-flex">
+    <div class="one-half">
+      <h3>Sweet &amp; sour ribs</h3>
+      <p><span>Pork</span>,<span>Oyster sauce</span></p>
+    </div>
+    <div class="one-forth">
+      <span class="price">Rs.780</span>
+    </div>
+  </div>
+</div>
+<div class="menus d-flex ftco-animate">
+  <div class="menu-img" style="background-image: url(images/tofu.jpg);"></div>
+  <div class="text d-flex">
+    <div class="one-half">
+      <h3>Mapo tofu</h3>
+      <p><span>Tofu</span>, <span>Soy sauce</span></p>
+    </div>
+    <div class="one-forth">
+      <span class="price">Rs.550</span>
+    </div>
+  </div>
+</div>
+<div class="menus d-flex ftco-animate">
+  <div class="menu-img" style="background-image: url(images/chicken.jpg);"></div>
+  <div class="text d-flex">
+    <div class="one-half">
+      <h3>Orange chicken</h3>
+      <p><span>Chicken</span>, <span>orange zest</span></p>
+    </div>
+    <div class="one-forth">
+      <span class="price">Rs.680</span>
+    </div>
+  </div>
+</div> -->
                   </div>
 
                   <div class="col-lg-6">
                     <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'dinner' LIMIT 5 , 5";
+                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'Fast Food' LIMIT 5 , 5";
                       $result2 = $con->query($sql2);
                       foreach ($result2 as $r2) {
                     ?>
@@ -127,14 +121,14 @@
                     </div>
                     <?php } ?>
      <!--                <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/nepali khana.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Nepali khana set</h3>
+                          <h3>Savory Watercress Chinese Pancakes</h3>
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.500</span>
+                          <span class="price">Rs.190</span>
                         </div>
                       </div>
                     </div>

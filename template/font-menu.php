@@ -37,6 +37,14 @@
                       </div>
                     </div>
                     <?php } ?>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
                     <!-- <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/pothot.jpg);"></div>
                       <div class="text d-flex">
@@ -101,7 +109,7 @@
 
                   <div class="col-lg-6">
                     <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'Fast Food' LIMIT 5 , 5";
+                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'dinner' LIMIT 5 , 5";
                       $result2 = $con->query($sql2);
                       foreach ($result2 as $r2) {
                     ?>
@@ -119,14 +127,14 @@
                     </div>
                     <?php } ?>
      <!--                <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/nepali khana.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Savory Watercress Chinese Pancakes</h3>
+                          <h3>Nepali khana set</h3>
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.190</span>
+                          <span class="price">Rs.500</span>
                         </div>
                       </div>
                     </div>

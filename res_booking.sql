@@ -139,7 +139,9 @@ INSERT INTO `menu_item` (`id`, `res_id`, `item_name`, `madeby`, `food_type`, `pr
 (5, 2, 'Pizza', 'Cheese', 'non-veg', 750, 'pizza.jpg'),
 (6, 3, 'Sushi', 'Fish', 'non-veg', 600, 'sushi.jpg'),
 (7, 4, 'Kimchi jjigae', 'Kimchi', 'non-veg', 300, 'kimchi.jpg'),
-(8, 5, 'Nepali khana set', 'Rice', 'dinner', 500, 'khana.jpg');
+(8, 5, 'Nepali khana set', 'Rice', 'dinner', 500, 'khana.jpg'),
+(9,2, 'Tiramisu', 'Egg', 'dessert', 420, 'tiramisu.jpg'),
+(10,3, 'Cheese cake', 'Cream Cheese', 'dessert', 450, 'cheesecake.jpg');
 
 -- --------------------------------------------------------
 

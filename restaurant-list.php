@@ -89,7 +89,7 @@ if (isset($_POST['find'])) {
                 <div class="row">
                   <?php  
                     $con = connect();
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 5";
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
@@ -98,30 +98,21 @@ if (isset($_POST['find'])) {
                       <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
-                        	<div class="col-lg-12">
-                          	<h3><?php echo $r['restaurant_name']; ?></h3>
-                      		</div>
+                          <div class="col-lg-12">
+                            <h3><?php echo $r['restaurant_name']; ?></h3>
+                          </div>
                           <div class="col-lg-12">
                             <p><?php echo $r['address']; ?></p>
                           </div>
                         </div>
                         <div class="one-third">
-                        	<a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <?php } ?>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
-   <!--  <div class="menus d-flex ftco-animate">
+              <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
@@ -138,7 +129,7 @@ if (isset($_POST['find'])) {
                       </div>
                     </div>
                   <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/italiaa.jpg)"></div>
+                      <div class="menu-img" style="background-image: url(images/italia.jpg)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
                         	<div class="col-lg-12">
@@ -159,7 +150,7 @@ if (isset($_POST['find'])) {
                 <div class="row">
                   <?php  
                     $con = connect();
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 5";
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 2";
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
@@ -168,15 +159,15 @@ if (isset($_POST['find'])) {
                       <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
-                        	<div class="col-lg-12">
-                          	<h3><?php echo $r['restaurant_name']; ?></h3>
-                      		</div>
+                          <div class="col-lg-12">
+                            <h3><?php echo $r['restaurant_name']; ?></h3>
+                          </div>
                           <div class="col-lg-12">
                             <p><?php echo $r['address']; ?></p>
                           </div>
                         </div>
                         <div class="one-third">
-                        	<a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
                         </div>
                       </div>
                     </div>
@@ -200,18 +191,18 @@ if (isset($_POST['find'])) {
                       </div>
                     </div>
                   <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/italiaa.jpg)"></div>
+                      <div class="menu-img" style="background-image: url(images/nepal.jpg)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
                         	<div class="col-lg-12">
-                          	<h3>Festa Italiana</h3>
+                          	<h3>Nepali Delights</h3>
                       		</div>
                           <div class="col-lg-12">
-                            <p>Baidam Road</p>
+                            <p>Shanti Marga</p>
                           </div>
                         </div>
                         <div class="one-third">
-                        	<a href="reservation.php?res_id=2" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        	<a href="reservation.php?res_id=5" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
                         </div>
                       </div>
                     </div> -->

@@ -223,14 +223,14 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/cheesecake.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/bibimbap.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Cheese cake</h3>
-                          <p><span>Cheese Cream</span></p>
+                          <h3>Bibimbap</h3>
+                          <p><span>Chicken</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.450</span>
+                          <span class="price">Rs.900</span>
                         </div>
                       </div>
                     </div>
@@ -273,9 +273,7 @@
                   </div>
 
                   <div class="col-lg-6">
-                  <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'dessert' LIMIT 5";
-                      $result2 = $con->query($sql2);
+                  <?php
                       foreach ($result2 as $r2) {
                     ?>
                     <div class="menus d-flex ftco-animate">
@@ -294,14 +292,14 @@
                     </div>
                     <?php } ?>
                <!--      <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/bibimbap.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/cheesecake.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Bibimbap</h3>
-                          <p><span>Chicken</span></p>
+                          <h3>Cheese cake</h3>
+                          <p><span>Cream Cheese</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.900</span>
+                          <span class="price">Rs.450</span>
                         </div>
                       </div>
                     </div>

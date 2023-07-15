@@ -210,7 +210,8 @@
                       </div>
                     </div>
                     <?php } ?>
-                    <!-- <div class="menus d-flex ftco-animate">
+
+               <!--      <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/tiramisu.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
@@ -223,75 +224,6 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/bibimbap.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Bibimbap</h3>
-                          <p><span>Chicken</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.900</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/ramen.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Ramen</h3>
-                          <p><span>Ramen</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.400</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/bulgogi.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Bulgogi</h3>
-                          <p><span>Pork</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.900</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/gimbap.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Gimbap</h3>
-                          <p><span>Tuna</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.500</span>
-                        </div>
-                      </div>
-                    </div> -->
-                  </div>
-
-                  <div class="col-lg-6">
-                  <?php
-                      foreach ($result2 as $r2) {
-                    ?>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/<?php echo $r2['image']; ?>);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3><?php echo $r2['item_name']; ?></h3>
-                          <?php if(isset($r2['madeby'])){?>
-                          <p><span><?php echo $r2['madeby']; ?></span></p>
-                          <?php }?>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.<?php echo $r2['price']; ?></span><br> 
-                        </div> 
-                      </div>
-                    </div>
-                    <?php } ?>
-               <!--      <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/cheesecake.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
@@ -300,18 +232,6 @@
                         </div>
                         <div class="one-forth">
                           <span class="price">Rs.450</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/lasagna.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Lasagna</h3>
-                          <p><span>Meat</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.550</span>
                         </div>
                       </div>
                     </div>

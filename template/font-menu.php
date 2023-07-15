@@ -223,14 +223,14 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/bibimbap.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/cheesecake.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Bibimbap</h3>
-                          <p><span>Meat<span>Tomatoe</span></p>
+                          <h3>Cheese cake</h3>
+                          <p><span>Cheese Cream</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.730</span>
+                          <span class="price">Rs.450</span>
                         </div>
                       </div>
                     </div>
@@ -294,14 +294,14 @@
                     </div>
                     <?php } ?>
                <!--      <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/cheesecake.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/bibimbap.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Cheese cake</h3>
-                          <p><span>Cream Cheese</span></p>
+                          <h3>Bibimbap</h3>
+                          <p><span>Chicken</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.450</span>
+                          <span class="price">Rs.900</span>
                         </div>
                       </div>
                     </div>

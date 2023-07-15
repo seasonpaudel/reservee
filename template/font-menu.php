@@ -248,23 +248,23 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/juju.jpg);"></div>
+                      <div class="text d-flex">
+                        <div class="one-half">
+                          <h3>Juju dhau</h3>
+                          <p><span>Milk</span></p>
+                        </div>
+                        <div class="one-forth">
+                          <span class="price">Rs.100</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/tempura.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Tempura</h3>
                           <p><span>Shrimp</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.740</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/tonkatsu.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Tonkatsu</h3>
-                          <p><span>Meat</span></p>
                         </div>
                         <div class="one-forth">
                           <span class="price">Rs.780</span>

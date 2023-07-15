@@ -164,10 +164,7 @@ if (isset($_POST['confirm'])) {
     </section>
     
    
-
-    <?php include 'template/footer.php'; ?>
-
-    <?php include 'template/script.php'; ?>
+     <?php include 'template/script.php'; ?>
     
   </body>
 </html>

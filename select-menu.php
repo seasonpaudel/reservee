@@ -205,7 +205,7 @@ include 'template/header.php'; ?>
     </section>
     </form>
 
-    <?php include 'template/footer.php'; ?>
+    
     
     <?php include 'template/script.php'; ?>
     

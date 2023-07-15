@@ -137,7 +137,7 @@
 
     
 
-    <?php include 'template/footer.php'; ?>
+    
     
     <?php include 'template/script.php'; ?>
     

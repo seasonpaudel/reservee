@@ -279,16 +279,18 @@
                 <div class="row">
                   <div class="col-lg-6">
                             <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'Drink' LIMIT 5";
+                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'drink' LIMIT 5";
                       $result2 = $con->query($sql2);
                       foreach ($result2 as $r2) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r2['image']; ?>);"></div>
+                      <div class="menu-img" style="background-image: url(images/<?php echo $r2['image']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3><?php echo $r2['item_name']; ?></h3>
-                          <p><span><?php echo $r2['madeby']; ?></p>
+                          <?php if(isset($r2['madeby'])){?>
+                          <p><span><?php echo $r2['madeby']; ?></span></p>
+                          <?php }?>
                         </div>
                         <div class="one-forth">
                           <span class="price">₹ <?php echo $r2['price']; ?></span><br> 
@@ -297,143 +299,62 @@
                     </div>
                     <?php } ?>
 <!--                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-1.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/coffee.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Lemon Juice</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                          <h3>Coffee</h3>
+                          <p><span>Coffee</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.90</span>
+                          <span class="price">Rs.180</span>
                         </div>
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-2.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/coke.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Guava Juice</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                          <h3>Coke</h3>
+                          <p><span>Carbonated Water</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.50</span>
+                          <span class="price">Rs.120</span>
                         </div>
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-3.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/mango.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Sprite</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                          <h3>Mango shake</h3>
+                          <p><span>Mango</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.60</span>
+                          <span class="price">Rs.300</span>
                         </div>
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-4.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/lemonade.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Cola</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                          <h3>Lemonade</h3>
+                          <p><span>Lemon</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.70</span>
+                          <span class="price">Rs.150</span>
                         </div>
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-5.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/peach.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Wine</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                          <h3>Peach tea</h3>
+                          <p><span>Peach</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.70</span>
-                        </div>
-                      </div>
-                    </div> -->
-                  </div>
-
-                  <div class="col-lg-6">
-                            <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE food_type = 'Drink' LIMIT 5 , 5";
-                      $result2 = $con->query($sql2);
-                      foreach ($result2 as $r2) {
-                    ?>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r2['image']; ?>);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3><?php echo $r2['item_name']; ?></h3>
-                          <p><span><?php echo $r2['madeby']; ?></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">₹ <?php echo $r2['price']; ?></span><br> 
-                        </div> 
-                      </div>
-                    </div>
-                    <?php } ?>
-<!--                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-6.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Beer</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.50</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-7.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Mango Juice</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.60</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-8.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Apple Juice</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.80</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-9.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Strawberry Juice</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.80</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-10.jpg);"></div>
-                      <div class="text d-flex">
-                        <div class="one-half">
-                          <h3>Orange Juice</h3>
-                          <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                        <div class="one-forth">
-                          <span class="price">Rs.100</span>
+                          <span class="price">Rs.220</span>
                         </div>
                       </div>
                     </div> -->

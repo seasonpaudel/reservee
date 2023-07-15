@@ -89,7 +89,7 @@ if (isset($_POST['find'])) {
                 <div class="row">
                   <?php  
                     $con = connect();
-                    $sql = "SELECT * FROM `restaurant_info` WHERE location = 'Lakeside' LIMIT 2";
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 5";
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
@@ -145,16 +145,73 @@ if (isset($_POST['find'])) {
                         </div>
                       </div>
                     </div>
+                  END -->
+                  <div class="tab-content py-5" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="row">
+                  <?php  
+                    $con = connect();
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 5";
+                    $result = $con->query($sql);
+                    foreach ($result as $r) {
+                  ?>
+                  <div class="col-lg-12">
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3><?php echo $r['restaurant_name']; ?></h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p><?php echo $r['address']; ?></p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-
-                END -->
+                  <?php } ?>
+              </div>
+              <!--  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/luffy.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Luffy House</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Pragati Marga</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=3" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/italiaa.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Festa Italiana</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Baidam Road</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=2" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div> -->
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
     
     <?php include 'template/script.php'; ?>
     

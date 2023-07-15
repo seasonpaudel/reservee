@@ -220,6 +220,7 @@ CREATE TABLE `restaurant_info` (
   `phone` int(11) NOT NULL,
   `address` varchar(200) NOT NULL,
   `location` varchar(50) NOT NULL,
+  'cuisine' varchar(100) NOT NULL,
   `logo` varchar(500) NOT NULL,
   `password` varchar(200) NOT NULL,
   `approve_status` int(11) NOT NULL,
@@ -230,12 +231,12 @@ CREATE TABLE `restaurant_info` (
 -- Dumping data for table `restaurant_info`
 --
 
-INSERT INTO `restaurant_info` (`id`, `restaurant_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `approve_status`, `role`) VALUES
-(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', '061547985', 'Gaurighat', 'Lakeside', 'china.jpeg', '123', 0, 1),
-(2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road', 'Lakeside', 'italia.jpg', '123', 0, 1),
-(3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga', 'New Road', 'luffy.jpg', '123', 0, 1),
-(4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside', 'Birauta', 'korea.jpg', '123', 0, 1),
-(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh', 'nepal.jpg', '123', 0, 1);
+INSERT INTO `restaurant_info` (`id`, `restaurant_name`, `email`, `phone`, `address`, `location`, 'cuisine' `logo`, `password`, `approve_status`, `role`) VALUES
+(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', '061547985', 'Gaurighat', 'Lakeside', 'Chinese' 'china.jpeg', '123', 0, 1),
+(2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road', 'Lakeside','Italian', 'italia.jpg', '123', 0, 1),
+(3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga', 'New Road','Japanese' 'luffy.jpg', '123', 0, 1),
+(4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside', 'Birauta','Korean' ,'korea.jpg', '123', 0, 1),
+(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh','Nepali','nepal.jpg', '123', 0, 1);
 
 -- --------------------------------------------------------
 

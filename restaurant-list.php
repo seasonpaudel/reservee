@@ -78,40 +78,39 @@ if (isset($_POST['find'])) {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 dish-menu">
+        <div class="col-md-12 dish-menu">
+  <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main</a>
+  </div>
 
-            <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main</a>
+  <div class="tab-content py-5" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      <div class="row">
+        <?php  
+          $con = connect();
+          $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
+          $result = $con->query($sql);
+          foreach ($result as $r) {
+        ?>
+        <div class="col-lg-12">
+          <div class="menus d-flex ftco-animate">
+            <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
+            <div class="text d-flex">
+              <div class="row one-half">
+                <div class="col-lg-12">
+                  <h3><?php echo $r['restaurant_name']; ?></h3>
+                </div>
+                <div class="col-lg-12">
+                  <p><?php echo $r['address']; ?></p>
+                </div>
+              </div>
+              <div class="one-third">
+                <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+              </div>
             </div>
-
-            <div class="tab-content py-5" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                <div class="row">
-                  <?php  
-                    $con = connect();
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
-                    $result = $con->query($sql);
-                    foreach ($result as $r) {
-                  ?>
-                  <div class="col-lg-12">
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
-                      <div class="text d-flex">
-                        <div class="row one-half">
-                          <div class="col-lg-12">
-                            <h3><?php echo $r['restaurant_name']; ?></h3>
-                          </div>
-                          <div class="col-lg-12">
-                            <p><?php echo $r['address']; ?></p>
-                          </div>
-                        </div>
-                        <div class="one-third">
-                          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <?php } ?>
+          </div>
+        </div>
+        <?php } ?>
               <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">

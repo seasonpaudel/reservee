@@ -293,7 +293,7 @@
                           <?php }?>
                         </div>
                         <div class="one-forth">
-                          <span class="price">₹ <?php echo $r2['price']; ?></span><br> 
+                          <span class="price">Rs.<?php echo $r2['price']; ?></span><br> 
                         </div> 
                       </div>
                     </div>

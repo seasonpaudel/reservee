@@ -112,8 +112,16 @@ if (isset($_POST['find'])) {
                     </div>
                   </div>
                   <?php } ?>
-              </div>
-              <!--  <div class="menus d-flex ftco-animate">
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+   <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">

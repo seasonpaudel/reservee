@@ -236,14 +236,14 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dumpling.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/chocochip icecream.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3>Dumpling</h3>
-                          <p><span>Chicken</span></p>
+                          <h3>Chocochip icecream</h3>
+                          <p><span>Whipped cream</span></p>
                         </div>
                         <div class="one-forth">
-                          <span class="price">Rs.300</span>
+                          <span class="price">Rs.200</span>
                         </div>
                       </div>
                     </div>

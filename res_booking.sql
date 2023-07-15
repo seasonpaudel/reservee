@@ -144,7 +144,11 @@ INSERT INTO `menu_item` (`id`, `res_id`, `item_name`, `madeby`, `food_type`, `pr
 (10,3, 'Cheese cake', 'Cream Cheese', 'dessert', 450, 'cheesecake.jpg'),
 (11,5, 'Coffee', 'Milk', 'drink', 180, 'coffee.jpg'),
 (12,3, 'Coke', 'Carbonated Water', 'drink', 120, 'coke.jpg'),
-(13,1, 'Mango shake', 'Mango', 'drink', 300, 'mango.jpg');
+(13,1, 'Mango shake', 'Mango', 'drink', 300, 'mango.jpg'),
+(14,5, 'Momo', 'Meat', 'dinner', 200, 'momo.jpg'),
+(15,1, 'Pork ribs', 'Pork', 'dinner', 950, 'ribs.jpg'),
+
+
 
 -- --------------------------------------------------------
 

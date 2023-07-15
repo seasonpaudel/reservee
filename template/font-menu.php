@@ -159,14 +159,14 @@
   </div>
 </div>
 <div class="menus d-flex ftco-animate">
-  <div class="menu-img" style="background-image: url(images/spaghetti.jpg);"></div>
+  <div class="menu-img" style="background-image: url(images/momo.jpg);"></div>
   <div class="text d-flex">
     <div class="one-half">
-      <h3>Spaghetti</h3>
-      <p><span>Spaghetti strips</span></p>
+      <h3>Momo</h3>
+      <p><span>Meat</span></p>
     </div>
     <div class="one-forth">
-      <span class="price">Rs.780</span>
+      <span class="price">Rs.200</span>
     </div>
   </div>
 </div>

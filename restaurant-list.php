@@ -89,13 +89,13 @@ if (isset($_POST['find'])) {
                 <div class="row">
                   <?php  
                     $con = connect();
-                    $sql = "SELECT * FROM `restaurant_info` WHERE location = '$area_id';";
+                    $sql = "SELECT * FROM `restaurant_info` WHERE location = 'Lakeside' LIMIT 2";
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
                   <div class="col-lg-12">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/user-image/<?php echo $r['logo']; ?>)"></div>
+                      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
                         	<div class="col-lg-12">
@@ -112,7 +112,42 @@ if (isset($_POST['find'])) {
                     </div>
                   </div>
                   <?php } ?>
-              </div><!-- END -->
+              </div>
+              <!--  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Peony Chinese Restaurant and Takeaway</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Gaurighat</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=1" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/italiaa.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Festa Italiana</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Baidam Road</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=2" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                END -->
             </div>
           </div>
         </div>

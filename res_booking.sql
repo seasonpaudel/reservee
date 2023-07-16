@@ -232,16 +232,21 @@ CREATE TABLE `restaurant_info` (
 --
 
 INSERT INTO `restaurant_info` (`id`, `restaurant_name`, `email`, `phone`, `address`, `location`, 'cuisine_id' `logo`, `password`, `approve_status`, `role`) VALUES
-(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', '061547985', 'Gaurighat', 'Lakeside', 1, 'china.jpeg', '123', 0, 1),
-(2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road', 'Lakeside', 2, 'italia.jpg', '123', 0, 1),
-(3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga', 'New Road', 3, 'luffy.jpg', '123', 0, 1),
-(4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside', 'Birauta', 4 ,'korea.jpg', '123', 0, 1),
-(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh', 5,'nepal.jpg', '123', 0, 1),
-(6, 'Nihao Kitchen', 'nihaokitchen@gmail.com', '061547736', 'Barahi Marga', 'Lakeside', 1, 'nihao.jpg', '123', 0, 1),
-(7, 'Vittorio Spaghetti', 'vittorio@gmail.com', '061478956', 'Hallan Chowk', 'Lakeside', 2, 'vittorio.jpg', '123', 0, 1),
-(8, 'Itadakimasu', 'itadakimasu@gmail.com', '061456723', 'Phewa Marga', 'Lakeside', 3, 'itadakimasu.jpg', '123', 0, 1),
-(9, 'Kimbablicious', 'kimbablicious@gmail.com', '061582355', 'Bastola Thar', 'Mahendrapool', 4, 'kimbablicious.jpg', '123', 0, 1),
-(10, 'Everest Bites', 'everestbites@gmail.com', '061489744', 'Dhikopatan', 'Lakeside', 5, 'everest.jpg', '123',0, 1);
+(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', 061547985, 'Gaurighat', 'Lakeside', 1, 'china.jpeg', '123', 0, 1),
+(2, 'Festa Italiana', 'festaitaliana@gmail.com', 061587496, 'Baidam Road', 'Lakeside', 2, 'italia.jpg', '123', 0, 1),
+(3, 'Luffy House', 'luffyhouse@gmail.com', 061547236, 'Pragati Marga', 'New Road', 3, 'luffy.jpg', '123', 0, 1),
+(4, 'Daebak Dining', 'daebakdining@gmail.com', 061598756, 'Damside', 'Birauta', 4 ,'korea.jpg', '123', 0, 1),
+(5, 'Nepali Delights', 'nepalidelights@gmail.com', 061458796, 'Shanti Marga', 'AmarSingh', 5,'nepal.jpg', '123', 0, 1),
+(6, 'Nihao Kitchen', 'nihaokitchen@gmail.com', 061547736, 'Barahi Marga', 'Lakeside', 1, 'nihao.jpg', '123', 0, 1),
+(7, 'Vittorio Spaghetti', 'vittorio@gmail.com', 061478956, 'Hallan Chowk', 'Lakeside', 2, 'vittorio.jpg', '123', 0, 1),
+(8, 'Itadakimasu', 'itadakimasu@gmail.com', 061456723, 'Phewa Marga', 'Lakeside', 3, 'itadakimasu.jpg', '123', 0, 1),
+(9, 'Kimbablicious', 'kimbablicious@gmail.com', 061582355, 'Bastola Thar', 'Mahendrapool', 4, 'kimbablicious.jpg', '123', 0, 1),
+(10, 'Everest Bites', 'everestbites@gmail.com', 061489744, 'Dhikopatan', 'Lakeside', 5, 'everest.jpg', '123', 0, 1),
+(11, 'Wang Wok', 'wangwok@gmail.com', 061478958, 'Gharipatan', 'Birauta', 1, 'wang.jpg', '123', 0, 1),
+(12, 'Labella Cucina', 'labella@gmail.com', 061598867, 'Khahare', 'Lakeside', 2, 'labella.jpg', '123', 0, 1 ),
+(13, 'Oishii Takoyaki', 'oishiitakoyaki@gmail.com', 061422356, 'Niva Galli', 'Chipledhunga', 3, 'oishii.jpg', '123', 0, 1),
+(14, 'Michi Go', 'michigo@gmail.com', 061596624, 'Gairapatan', 'Chipledhunga', 4, 'michigo.jpg', '123', 0, 1),
+(15, 'Gurkha Gourmet', 'gurkhagourmet@gmail.com', 061488523, 'Baidam Road', 'Lakeside', 5, 'gurkha.jpg', '123', 0, 1);
 -- --------------------------------------------------------
 
 --

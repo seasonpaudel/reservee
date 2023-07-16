@@ -268,6 +268,86 @@ if (isset($_POST['find'])) {
                         </div>
                       </div>
                     </div>
+                   <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/wang.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Wang Wok</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Gharipatan</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=11" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/labella.jpg.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Labella Cucina</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Khahare</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=12" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/oishii.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Oishii Takoyaki</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Niva Galli</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=13" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/michigo.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Michi Go</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Gairapatan</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=14" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/gurkha.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Gurkha Gourmet</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Baidam Road</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=15" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div> 
 
                   END -->
                   

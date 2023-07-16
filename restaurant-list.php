@@ -40,19 +40,26 @@ if (isset($_POST['find'])) {
                 <?php  
                   $con = connect();
                   $selected_cuisine = $_POST['area']; 
+
+                  $sql = ""; // Initialize the SQL query variable
+
+                  // Generate the SQL query based on the selected cuisine
                   if ($selected_cuisine === 'Chinese') {
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
-                  }
-                  elseif ($selected_cuisine === 'Italian') {
+                  } elseif ($selected_cuisine === 'Japanese') {
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 2";
                   }
-                  $result = $con->query($sql);
-                  foreach ($result as $r) {
-                    if (isset($r['address'])) {
-                      $address = $r['address'];
-                    } else {
-                      $address = 'Address not available';
-                    }
+                  // Add more conditions for other cuisines if needed
+
+                  // Check if the SQL query is not empty
+                  if (!empty($sql)) {
+                    $result = $con->query($sql);
+                    foreach ($result as $r) {
+                      if (isset($r['address'])) {
+                        $address = $r['address'];
+                      } else {
+                        $address = 'Address not available';
+                      }
                 ?>
                   <div class="col-lg-12">
                     <div class="menus d-flex ftco-animate">
@@ -72,7 +79,12 @@ if (isset($_POST['find'])) {
                       </div>
                     </div>
                   </div>
-                <?php } ?>
+                <?php
+                    }
+                  } else {
+                    echo "No cuisine selected.";
+                  }
+                ?>
               <!-- <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">

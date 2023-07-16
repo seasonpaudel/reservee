@@ -152,8 +152,7 @@ if (isset($_POST['find'])) {
                         	<a href="reservation.php?res_id=2" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
                         </div>
                       </div>
-                    </div>
-                  END -->
+                    </div>-->
                   </div>
             </div>
           </div>

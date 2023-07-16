@@ -43,24 +43,24 @@ if (isset($_POST['find'])) {
                   </div>
                   <p style="font-size: 20px;color: #000">Cuisines</p>
                   <div class="select-wrap one-half">
-  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-  <select class="form-control populate" name="area" required="">
-    <option value=""> -Select- </option>
-    <?php 
-      $con = connect();
-      $sql = "SELECT * FROM `Cuisines`;";
-      $result = $con->query($sql);
-      foreach ($result as $r) {
-        if ($r['cuisine'] === $selected_cuisine) {
-          // Add the selected attribute to the option if it matches the selected cuisine
-          echo '<option value="' . $r['id'] . '" selected>' . $r['cuisine_name'] . '</option>';
-        } else {
-          echo '<option value="' . $r['id'] . '">' . $r['cuisine_name'] . '</option>';
-        }
-      }
-    ?>
-  </select>
-</div>
+                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                    <select class="form-control populate" name="area" required="">
+                      <option value=""> -Select- </option>
+                      <?php 
+                        $con = connect();
+                        $sql = "SELECT * FROM `Cuisines`;";
+                        $result = $con->query($sql);
+                        foreach ($result as $r) {
+                          if ($r['cuisine'] === $selected_cuisine) {
+                            // Add the selected attribute to the option if it matches the selected cuisine
+                            echo '<option value="' . $r['id'] . '" selected>' . $r['cuisine_name'] . '</option>';
+                          } else {
+                            echo '<option value="' . $r['id'] . '">' . $r['cuisine_name'] . '</option>';
+                          }
+                        }
+                      ?>
+                    </select>
+                  </div>
                 </div>
                 <input type="submit" class="search-submit btn btn-primary" name="find" value="Find">
               </form>
@@ -88,39 +88,39 @@ if (isset($_POST['find'])) {
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 <div class="row">
                 <?php  
-$con = connect();
-$selected_cuisine = $_POST['area']; 
-$sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2";
-$result = $con->query($sql);
-foreach ($result as $r) {
-  if ($r['cuisine'] !== $selected_cuisine) {
-    continue;
-  }
-  if (isset($r['address'])) {
-    $address = $r['address'];
-  } else {
-    $address = 'Address not available';
-  }
-?>
-  <div class="col-lg-12">
-    <div class="menus d-flex ftco-animate">
-      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
-      <div class="text d-flex">
-        <div class="row one-half">
-          <div class="col-lg-12">
-            <h3><?php echo $r['restaurant_name']; ?></h3>
-          </div>
-          <div class="col-lg-12">
-            <p><?php echo $address; ?></p> 
-          </div>
-        </div>
-        <div class="one-third">
-          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php } ?>
+                  $con = connect();
+                  $selected_cuisine = $_POST['area']; 
+                  $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2";
+                  $result = $con->query($sql);
+                  foreach ($result as $r) {
+                    if ($r['cuisine'] !== $selected_cuisine) {
+                      continue;
+                    }
+                    if (isset($r['address'])) {
+                      $address = $r['address'];
+                    } else {
+                      $address = 'Address not available';
+                    }
+                ?>
+                  <div class="col-lg-12">
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                          <div class="col-lg-12">
+                            <h3><?php echo $r['restaurant_name']; ?></h3>
+                          </div>
+                          <div class="col-lg-12">
+                            <p><?php echo $address; ?></p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <?php } ?>
               <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
@@ -154,6 +154,7 @@ foreach ($result as $r) {
                       </div>
                     </div>
                   END -->
+                  </div>
             </div>
           </div>
         </div>
@@ -164,3 +165,6 @@ foreach ($result as $r) {
     
   </body>
 </html>
+<?php 
+  }
+?>     

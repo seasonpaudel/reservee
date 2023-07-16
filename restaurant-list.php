@@ -157,8 +157,3 @@ if (isset($_POST['find'])) {
     
   </body>
 </html>
-<?php 
-  else{
-
-  }
- ?>

@@ -52,7 +52,7 @@ if (isset($_POST['find'])) {
                         $result = $con->query($sql);
                         foreach ($result as $r) {
                           if ($r['cuisine'] === $selected_cuisine) {
-                            // Add the selected attribute to the option if it matches the selected cuisine
+
                             echo '<option value="' . $r['id'] . '" selected>' . $r['cuisine_name'] . '</option>';
                           } else {
                             echo '<option value="' . $r['id'] . '">' . $r['cuisine_name'] . '</option>';
@@ -121,22 +121,23 @@ if (isset($_POST['find'])) {
                     </div>
                   </div>
                 <?php } ?>
-              <!--  <div class="menus d-flex ftco-animate">
+              <!-- <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
                         <div class="row one-half">
-                        	<div class="col-lg-12">
-                          	<h3>Peony Chinese Restaurant and Takeaway</h3>
-                      		</div>
+                          <div class="col-lg-12">
+                            <h3>Peony Chinese Restaurant and Takeaway</h3>
+                          </div>
                           <div class="col-lg-12">
                             <p>Gaurighat</p>
                           </div>
                         </div>
                         <div class="one-third">
-                        	<a href="reservation.php?res_id=1" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                          <a href="reservation.php?res_id=1" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
                         </div>
                       </div>
                     </div>
+                  </div>
                   <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/italia.jpg)"></div>
                       <div class="text d-flex">

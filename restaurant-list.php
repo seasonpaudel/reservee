@@ -2,7 +2,7 @@
 
 <?php 
 if (isset($_POST['find'])) {
-  $area_id = $_POST['area'];
+  $selected_cuisine = $_POST['area'];
 
   include 'dbCon.php';
   include 'template/header.php';

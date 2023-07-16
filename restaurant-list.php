@@ -84,12 +84,8 @@ if (isset($_POST['find'])) {
                 <div class="row">
                   <?php  
                     $con = connect();
-<<<<<<< HEAD
-                    $sql = "SELECT * FROM `restaurant_info` WHERE location = 'Lakeside' LIMIT 2";
-=======
                     $selected_cuisine = $_POST['area']; 
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine_id = '$selected_cuisine' LIMIT 2"; 
->>>>>>> 1c7dbb859e3d82ec0c84474a2763ddeca574762b
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
@@ -112,10 +108,6 @@ if (isset($_POST['find'])) {
                     </div>
                   </div>
                   <?php } ?>
-<<<<<<< HEAD
-              </div>
-=======
->>>>>>> 1c7dbb859e3d82ec0c84474a2763ddeca574762b
               <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
@@ -133,11 +125,7 @@ if (isset($_POST['find'])) {
                       </div>
                     </div>
                   <div class="menus d-flex ftco-animate">
-<<<<<<< HEAD
-                      <div class="menu-img" style="background-image: url(images/italiaa.jpg)"></div>
-=======
                       <div class="menu-img" style="background-image: url(images/italia.jpg)"></div>
->>>>>>> 1c7dbb859e3d82ec0c84474a2763ddeca574762b
                       <div class="text d-flex">
                         <div class="row one-half">
                         	<div class="col-lg-12">
@@ -152,11 +140,6 @@ if (isset($_POST['find'])) {
                         </div>
                       </div>
                     </div>
-<<<<<<< HEAD
-                  </div>
-
-                END -->
-=======
                     <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/luffy.jpg)"></div>
                       <div class="text d-flex">
@@ -208,7 +191,6 @@ if (isset($_POST['find'])) {
 
                   END -->
                   
->>>>>>> 1c7dbb859e3d82ec0c84474a2763ddeca574762b
             </div>
           </div>
         </div>

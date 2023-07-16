@@ -2,7 +2,7 @@
 
 <?php 
 if (isset($_POST['find'])) {
-  $area_id = $_POST['area'];
+  $selected_cuisine = $_POST['area'];
 
   include 'dbCon.php';
   include 'template/header.php';
@@ -51,6 +51,9 @@ if (isset($_POST['find'])) {
                         $sql = "SELECT * FROM `Cuisines`;";
                         $result = $con->query($sql);
                         foreach ($result as $r) {
+                          if ($r['cuisine'] === $selected_cuisine) {
+                          }
+                        }
                       ?>
                         <option value="<?php echo $r['id']; ?>"><?php echo $r['cuisine_name']; ?></option>
                       <?php } ?>
@@ -88,6 +91,9 @@ if (isset($_POST['find'])) {
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2"; 
                     $result = $con->query($sql);
                     foreach ($result as $r) {
+                      if ($r['cuisine'] === $selected_cuisine) {
+                      }
+                    }
                   ?>
                   <div class="col-lg-12">
                     <div class="menus d-flex ftco-animate">
@@ -107,7 +113,7 @@ if (isset($_POST['find'])) {
                       </div>
                     </div>
                   </div>
-                  <?php } ?>
+                  <?php ?>
               <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
@@ -141,68 +147,6 @@ if (isset($_POST['find'])) {
                       </div>
                     </div>
                   END -->
-                  <div class="tab-content py-5" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                <div class="row">
-                  <?php  
-                    $con = connect();
-                    $selected_cuisine = $_POST['area']; 
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2";
-                    $result = $con->query($sql);
-                    foreach ($result as $r) {
-                  ?>
-                  <div class="col-lg-12">
-                    <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
-                      <div class="text d-flex">
-                        <div class="row one-half">
-                          <div class="col-lg-12">
-                            <h3><?php echo $r['restaurant_name']; ?></h3>
-                          </div>
-                          <div class="col-lg-12">
-                            <p><?php echo $r['address']; ?></p>
-                          </div>
-                        </div>
-                        <div class="one-third">
-                          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <?php } ?>
-              </div>
-              <!--  <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/luffy.jpg)"></div>
-                      <div class="text d-flex">
-                        <div class="row one-half">
-                        	<div class="col-lg-12">
-                          	<h3>Luffy House</h3>
-                      		</div>
-                          <div class="col-lg-12">
-                            <p>Pragati Marga</p>
-                          </div>
-                        </div>
-                        <div class="one-third">
-                        	<a href="reservation.php?res_id=3" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
-                        </div>
-                      </div>
-                    </div>
-                  <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/nepal.jpg)"></div>
-                      <div class="text d-flex">
-                        <div class="row one-half">
-                        	<div class="col-lg-12">
-                          	<h3>Nepali Delights</h3>
-                      		</div>
-                          <div class="col-lg-12">
-                            <p>Shanti Marga</p>
-                          </div>
-                        </div>
-                        <div class="one-third">
-                        	<a href="reservation.php?res_id=5" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
-                        </div>
-                      </div>
-                    </div> -->
             </div>
           </div>
         </div>

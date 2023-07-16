@@ -41,17 +41,14 @@ if (isset($_POST['find'])) {
                   $con = connect();
                   $selected_cuisine = $_POST['area']; 
 
-                  $sql = ""; // Initialize the SQL query variable
+                  $sql = ""; 
 
-                  // Generate the SQL query based on the selected cuisine
                   if ($selected_cuisine === 'Chinese') {
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
                   } elseif ($selected_cuisine === 'Japanese') {
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 2";
                   }
-                  // Add more conditions for other cuisines if needed
-
-                  // Check if the SQL query is not empty
+          
                   if (!empty($sql)) {
                     $result = $con->query($sql);
                     foreach ($result as $r) {

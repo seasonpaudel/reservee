@@ -85,7 +85,7 @@ if (isset($_POST['find'])) {
                   <?php  
                     $con = connect();
                     $selected_cuisine = $_POST['area']; 
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2"; 
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine_id = '$selected_cuisine' LIMIT 2"; 
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>

@@ -220,7 +220,7 @@ CREATE TABLE `restaurant_info` (
   `phone` int(11) NOT NULL,
   `address` varchar(200) NOT NULL,
   `location` varchar(50) NOT NULL,
-  'cuisine' varchar(100) NOT NULL,
+  `cuisine` varchar(100) NOT NULL,
   `logo` varchar(500) NOT NULL,
   `password` varchar(200) NOT NULL,
   `approve_status` int(11) NOT NULL,

@@ -4,36 +4,34 @@
 if (isset($_POST['find'])) {
   $area_id = $_POST['area'];
 
-                        include 'dbCon.php';
-  include 'template/header.php'; ?>
+  include 'dbCon.php';
+  include 'template/header.php';
+?>
   <body>
     
    <?php include 'template/nav-bar.php'; ?>
     <!-- END nav -->
     
-    <section class="home-slider owl-carousel" >
+    <section class="home-slider owl-carousel">
       <div class="slider-item" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-10 col-sm-12 ftco-animate text-center" >
+            <div class="col-md-10 col-sm-12 ftco-animate text-center">
               <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span>Restaurants</span></p>
               <h1 class="mb-3" style="font-family: 'Courier New', Courier, monospace;">Restaurants List</h1>
             </div>
           </div>
         </div>
       </div>
-
-
     </section>
 
-  <div class="ftco-section-reservation" style="margin-top: 145px;"  >
+    <div class="ftco-section-reservation" style="margin-top: 145px;">
       <div class="container">
         <div class="row">
           <div class="col-md-12 reservation pt-5 px-5">
               <p style="font-size: 20px; color: #000;font-weight: bold;margin-top: -30px">Make a Reservation</p>
             <div class="block-17" style="min-height: 100px;">
-              
               <form action="restaurant-list.php" method="POST" class="d-block d-lg-flex">
                 <div class="fields d-block d-lg-flex">
                   <p style="font-size: 20px;color: #000">City</p>
@@ -43,10 +41,10 @@ if (isset($_POST['find'])) {
                       <option value="Pokhara">Pokhara</option>
                     </select>
                   </div>
-                    <p style="font-size: 20px;color: #000">Cuisines</p>
+                  <p style="font-size: 20px;color: #000">Cuisines</p>
                   <div class="select-wrap one-half">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select data-plugin-selectTwo class="form-control populate" name="area" required=""  style="cursor: pointer;">
+                    <select data-plugin-selectTwo class="form-control populate" name="area" required="" style="cursor: pointer;">
                       <option value=""> -Select- </option>
                       <?php 
                         $con = connect();
@@ -59,15 +57,13 @@ if (isset($_POST['find'])) {
                     </select>
                   </div>
                 </div>
-                <input type="submit" class="search-submit btn btn-primary" name="find" value="Find">  
+                <input type="submit" class="search-submit btn btn-primary" name="find" value="Find">
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    
 
     <section class="ftco-section bg-light">
       <div class="container">
@@ -78,39 +74,40 @@ if (isset($_POST['find'])) {
           </div>
         </div>
         <div class="row">
-        <div class="col-md-12 dish-menu">
-  <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main</a>
-  </div>
-
-  <div class="tab-content py-5" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-      <div class="row">
-        <?php  
-          $con = connect();
-          $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
-          $result = $con->query($sql);
-          foreach ($result as $r) {
-        ?>
-        <div class="col-lg-12">
-          <div class="menus d-flex ftco-animate">
-            <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
-            <div class="text d-flex">
-              <div class="row one-half">
-                <div class="col-lg-12">
-                  <h3><?php echo $r['restaurant_name']; ?></h3>
-                </div>
-                <div class="col-lg-12">
-                  <p><?php echo $r['address']; ?></p>
-                </div>
-              </div>
-              <div class="one-third">
-                <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
-              </div>
+          <div class="col-md-12 dish-menu">
+            <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main</a>
             </div>
-          </div>
-        </div>
-        <?php } ?>
+
+            <div class="tab-content py-5" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="row">
+                  <?php  
+                    $con = connect();
+                    $selected_cuisine = $_POST['area']; 
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2"; 
+                    $result = $con->query($sql);
+                    foreach ($result as $r) {
+                  ?>
+                  <div class="col-lg-12">
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/<?php echo $r['logo']; ?>)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                          <div class="col-lg-12">
+                            <h3><?php echo $r['restaurant_name']; ?></h3>
+                          </div>
+                          <div class="col-lg-12">
+                            <p><?php echo $r['address']; ?></p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                          <a href="reservation.php?res_id=<?php echo $r['id']; ?>" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <?php } ?>
               <!--  <div class="menus d-flex ftco-animate">
                       <div class="menu-img" style="background-image: url(images/china.jpg)"></div>
                       <div class="text d-flex">
@@ -149,6 +146,7 @@ if (isset($_POST['find'])) {
                 <div class="row">
                   <?php  
                     $con = connect();
+                    $selected_cuisine = $_POST['area']; 
                     $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 2";
                     $result = $con->query($sql);
                     foreach ($result as $r) {

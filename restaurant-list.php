@@ -43,22 +43,24 @@ if (isset($_POST['find'])) {
                   </div>
                   <p style="font-size: 20px;color: #000">Cuisines</p>
                   <div class="select-wrap one-half">
-                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select class="form-control populate" name="area" required="">
-                      <option value=""> -Select- </option>
-                      <?php 
-                        $con = connect();
-                        $sql = "SELECT * FROM `Cuisines`;";
-                        $result = $con->query($sql);
-                        foreach ($result as $r) {
-                          if ($r['cuisine'] === $selected_cuisine) {
-                          }
-                        }
-                      ?>
-                        <option value="<?php echo $r['id']; ?>"><?php echo $r['cuisine_name']; ?></option>
-                      <?php } ?>
-                    </select>
-                  </div>
+  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+  <select class="form-control populate" name="area" required="">
+    <option value=""> -Select- </option>
+    <?php 
+      $con = connect();
+      $sql = "SELECT * FROM `Cuisines`;";
+      $result = $con->query($sql);
+      foreach ($result as $r) {
+        if ($r['cuisine'] === $selected_cuisine) {
+          // Add the selected attribute to the option if it matches the selected cuisine
+          echo '<option value="' . $r['id'] . '" selected>' . $r['cuisine_name'] . '</option>';
+        } else {
+          echo '<option value="' . $r['id'] . '">' . $r['cuisine_name'] . '</option>';
+        }
+      }
+    ?>
+  </select>
+</div>
                 </div>
                 <input type="submit" class="search-submit btn btn-primary" name="find" value="Find">
               </form>

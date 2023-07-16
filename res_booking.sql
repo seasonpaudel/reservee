@@ -220,7 +220,7 @@ CREATE TABLE `restaurant_info` (
   `phone` int(11) NOT NULL,
   `address` varchar(200) NOT NULL,
   `location` varchar(50) NOT NULL,
-  `cuisine` varchar(100) NOT NULL,
+  `cuisine_id` int(11) NOT NULL,
   `logo` varchar(500) NOT NULL,
   `password` varchar(200) NOT NULL,
   `approve_status` int(11) NOT NULL,
@@ -231,12 +231,12 @@ CREATE TABLE `restaurant_info` (
 -- Dumping data for table `restaurant_info`
 --
 
-INSERT INTO `restaurant_info` (`id`, `restaurant_name`, `email`, `phone`, `address`, `location`, 'cuisine' `logo`, `password`, `approve_status`, `role`) VALUES
-(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', '061547985', 'Gaurighat', 'Lakeside', 'Chinese' 'china.jpeg', '123', 0, 1),
-(2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road', 'Lakeside','Italian', 'italia.jpg', '123', 0, 1),
-(3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga', 'New Road','Japanese' 'luffy.jpg', '123', 0, 1),
-(4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside', 'Birauta','Korean' ,'korea.jpg', '123', 0, 1),
-(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh','Nepali','nepal.jpg', '123', 0, 1);
+INSERT INTO `restaurant_info` (`id`, `restaurant_name`, `email`, `phone`, `address`, `location`, 'cuisine_id' `logo`, `password`, `approve_status`, `role`) VALUES
+(1, 'Peony Chinese Restaurant and Takeaway', 'peonychinese@gmail.com', '061547985', 'Gaurighat', 'Lakeside', 1, 'china.jpeg', '123', 0, 1),
+(2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road', 'Lakeside', 2, 'italia.jpg', '123', 0, 1),
+(3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga', 'New Road', 3, 'luffy.jpg', '123', 0, 1),
+(4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside', 'Birauta', 4 ,'korea.jpg', '123', 0, 1),
+(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh', 5,'nepal.jpg', '123', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -321,6 +321,13 @@ ALTER TABLE `restaurant_chair`
 ALTER TABLE `restaurant_tables`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
+ --
+-- AUTO_INCREMENT for table `restaurant_info`
+--
+ALTER TABLE `restaurant_info`
+ADD CONSTRAINT `fk_cuisine_id`
+FOREIGN KEY (`cuisine_id`)
+REFERENCES `cuisines` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -85,7 +85,7 @@ if (isset($_POST['find'])) {
                   <?php  
                     $con = connect();
                     $selected_cuisine = $_POST['area']; 
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine_id = '$selected_cuisine' LIMIT 2"; 
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine_id = '$selected_cuisine' LIMIT 3"; 
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
@@ -185,6 +185,86 @@ if (isset($_POST['find'])) {
                         </div>
                         <div class="one-third">
                         	<a href="reservation.php?res_id=5" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/nihao.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Nihao Kitchen</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Barahi Marga</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=6" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/vittorio.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Vittorio Spaghetti</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Hallan Chowk</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=7" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/itadakimasu.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Itadakimasu</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Phewa Marga</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=8" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/kimbablicious.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Kimbablicious</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Bastola Thar</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=9" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/everest.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Everest Bites</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Dhikopatan</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=10" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
                         </div>
                       </div>
                     </div>

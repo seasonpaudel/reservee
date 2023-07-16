@@ -236,8 +236,12 @@ INSERT INTO `restaurant_info` (`id`, `restaurant_name`, `email`, `phone`, `addre
 (2, 'Festa Italiana', 'festaitaliana@gmail.com', '061587496', 'Baidam Road', 'Lakeside', 2, 'italia.jpg', '123', 0, 1),
 (3, 'Luffy House', 'luffyhouse@gmail.com', '061547236', 'Pragati Marga', 'New Road', 3, 'luffy.jpg', '123', 0, 1),
 (4, 'Daebak Dining', 'daebakdining@gmail.com', '061598756', 'Damside', 'Birauta', 4 ,'korea.jpg', '123', 0, 1),
-(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh', 5,'nepal.jpg', '123', 0, 1);
-
+(5, 'Nepali Delights', 'nepalidelights@gmail.com', '061458796', 'Shanti Marga', 'AmarSingh', 5,'nepal.jpg', '123', 0, 1),
+(6, 'Nihao Kitchen', 'nihaokitchen@gmail.com', '061547736', 'Barahi Marga', 'Lakeside', 1, 'nihao.jpg', '123', 0, 1),
+(7, 'Vittorio Spaghetti', 'vittorio@gmail.com', '061478956', 'Hallan Chowk', 'Lakeside', 2, 'vittorio.jpg', '123', 0, 1),
+(8, 'Itadakimasu', 'itadakimasu@gmail.com', '061456723', 'Phewa Marga', 'Lakeside', 3, 'itadakimasu.jpg', '123', 0, 1),
+(9, 'Kimbablicious', 'kimbablicious@gmail.com', '061582355', 'Bastola Thar', 'Mahendrapool', 4, 'kimbablicious.jpg', '123', 0, 1),
+(10, 'Everest Bites', 'everestbites@gmail.com', '061489744', 'Dhikopatan', 'Lakeside', 5, 'everest.jpg', '123',0, 1);
 -- --------------------------------------------------------
 
 --

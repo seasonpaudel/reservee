@@ -140,6 +140,55 @@ if (isset($_POST['find'])) {
                         </div>
                       </div>
                     </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/luffy.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Luffy House</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Pragati Marga</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=3" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/korea.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Daebak Dining</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Damside</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=4" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                      <div class="menu-img" style="background-image: url(images/nepal.jpg)"></div>
+                      <div class="text d-flex">
+                        <div class="row one-half">
+                        	<div class="col-lg-12">
+                          	<h3>Nepali Delights</h3>
+                      		</div>
+                          <div class="col-lg-12">
+                            <p>Shanti Marga</p>
+                          </div>
+                        </div>
+                        <div class="one-third">
+                        	<a href="reservation.php?res_id=5" class="btn btn-info" style="width: 100%;margin-left: 23px;margin-top: 18px;">Book Table</a>
+                        </div>
+                      </div>
+                    </div>
+
                   END -->
                   
             </div>

@@ -44,7 +44,7 @@ if (isset($_POST['find'])) {
                   <p style="font-size: 20px;color: #000">Cuisines</p>
                   <div class="select-wrap one-half">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select data-plugin-selectTwo class="form-control populate" name="area" required="" style="cursor: pointer;">
+                    <select class="form-control populate" name="area" required="">
                       <option value=""> -Select- </option>
                       <?php 
                         $con = connect();
@@ -85,7 +85,7 @@ if (isset($_POST['find'])) {
                   <?php  
                     $con = connect();
                     $selected_cuisine = $_POST['area']; 
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2"; 
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2"; 
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>
@@ -147,7 +147,7 @@ if (isset($_POST['find'])) {
                   <?php  
                     $con = connect();
                     $selected_cuisine = $_POST['area']; 
-                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Japanese' LIMIT 2";
+                    $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2";
                     $result = $con->query($sql);
                     foreach ($result as $r) {
                   ?>

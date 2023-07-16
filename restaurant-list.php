@@ -89,8 +89,8 @@ if (isset($_POST['find'])) {
                 <div class="row">
                 <?php  
                   $con = connect();
-                  $selected_cuisine = $_POST['area']; 
-                  $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = 'Chinese' LIMIT 2";
+                  $selected_cuisine = 'Chinese'; 
+                  $sql = "SELECT * FROM `restaurant_info` WHERE cuisine = '$selected_cuisine' LIMIT 2";
                   $result = $con->query($sql);
                   foreach ($result as $r) {
                     if ($r['cuisine'] !== $selected_cuisine) {

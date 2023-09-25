@@ -2,7 +2,7 @@
 <?php
 function getRestaurantBackgroundImage($restaurantID) {
     $imageURLs = [
-        1 => 'images/restaurant1_bg.jpg',
+        1 => 'images/peony.jpg',
         2 => 'images/restaurant2_bg.jpg',
         // Add more restaurant IDs and respective background image URLs as needed
     ];

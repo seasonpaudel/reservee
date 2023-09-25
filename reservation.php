@@ -79,7 +79,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
           <div class="col-md-4 ftco-animate img" style="background-image: url(images/peony.jpg); width: 300px; height: 550px;"></div>
           <div class="col-md-8 ftco-animate makereservation p-5 bg-light">
             
-            <form action="choose-table.php?id=1" method="POST">
+            <form action="choose-table.php?restaurant_id=1" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">

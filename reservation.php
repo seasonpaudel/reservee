@@ -69,7 +69,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
     </div>
 
     <section class="ftco-section bg-light">
-    <section class="ftco-section bg-light" style="background-image: url('images/<?php echo $_GET['restaurant_id']; ?>/background.jpg');">
+    <section class="ftco-section bg-light" style="background-image: url('images/<?php echo $_GET['restaurant_id']; ?>/peony.jpg');">
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">

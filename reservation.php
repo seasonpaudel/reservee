@@ -69,7 +69,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
     </div>
 
     <section class="ftco-section bg-light">
-    <section class="ftco-section bg-light" style="background-image: url('images/<?php echo $_GET['restaurant_id']; ?>/peony.jpg');">
+    <section class="ftco-section bg-light" style="background-image: url('images/<?php echo $_GET['res_id']; ?>/background.jpg');">
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -79,7 +79,8 @@ if (!isset($_SESSION['isLoggedIn'])) {
         <div class="row d-flex">
           <div class="col-md-4 ftco-animate img" style="background-image: url(images/peony.jpg); width: 300px; height: 550px;"></div>
           <div class="col-md-8 ftco-animate makereservation p-5 bg-light">
-          <form action="restaurant-list.php?restaurant_id=1" method="POST" class="d-block d-lg-flex">
+          <form action="restaurant-list.php?res_id=1" method="POST" class="d-block d-lg-flex">
+
             <form action="choose-table.php" method="POST">
             
               <div class="row">

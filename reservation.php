@@ -1,4 +1,15 @@
 <!-- reservation.php -->
+<?php
+function getRestaurantBackgroundImage($restaurantID) {
+    $imageURLs = [
+        1 => 'images/restaurant1_bg.jpg',
+        2 => 'images/restaurant2_bg.jpg',
+        // Add more restaurant IDs and respective background image URLs as needed
+    ];
+
+    return isset($imageURLs[$restaurantID]) ? $imageURLs[$restaurantID] : 'images/default_bg.jpg';
+}
+?>
 <?php include 'template/header.php';
 
                         include 'dbCon.php';
@@ -76,7 +87,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
           </div>
         </div>
         <div class="row d-flex">
-          <div class="col-md-4 ftco-animate img" style="background-image: url(images/peony.jpg); width: 300px; height: 550px;"></div>
+        <div class="col-md-4 ftco-animate img" style="background-image: url('<?php echo getRestaurantBackgroundImage($_GET['1']); ?>'); width: 300px; height: 550px;"></div>
           <div class="col-md-8 ftco-animate makereservation p-5 bg-light">
             
             <form action="choose-table.php" method="POST">

@@ -1,13 +1,13 @@
 <!-- reservation.php -->
 <?php
-function getRestaurantBackgroundImage($restaurantID) {
+function getRestaurantBackgroundImage($res_id) {
     $imageURLs = [
         1 => 'images/peony.jpg',
         2 => 'images/restaurant2_bg.jpg',
         // Add more restaurant IDs and respective background image URLs as needed
     ];
 
-    return isset($imageURLs[$restaurantID]) ? $imageURLs[$restaurantID] : 'images/default_bg.jpg';
+    return isset($imageURLs[$res_id]) ? $imageURLs[$res_id] : 'images/default_bg.jpg';
 }
 ?>
 <?php include 'template/header.php';

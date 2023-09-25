@@ -72,7 +72,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-          <h1>Peony Chinese Restaurant and Takeaway Reservation</h1>
             <h2>Choose a Reservation Date and Time</h2>
           </div>
         </div>

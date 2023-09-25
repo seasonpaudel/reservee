@@ -3,8 +3,20 @@
 function getRestaurantBackgroundImage($res_id) {
     $imageURLs = [
         1 => 'images/peony.jpg',
-        2 => 'images/restaurant2_bg.jpg',
-        // Add more restaurant IDs and respective background image URLs as needed
+        2 => 'images/fiesta.jpg',
+        3 => 'images/one.jpg',
+        4 => 'images/daebakkk.jpg',
+        5 => 'images/delights.jpg',
+        6 => 'images/hao.jpg',
+        7 => 'images/vit.jpg',
+        8 => 'images/itadakimas.jpg',
+        9 => 'images/gimbab.jpg',
+        10 => 'images/rest.jpg',
+        11 => 'images/wangji.jpg',
+        12 => 'images/belle.jpg',
+        13 => 'images/oishh.jpg',
+        14 => 'images/michi.jpg',
+        15 => 'images/gourmet.jpg',
     ];
 
     return isset($imageURLs[$res_id]) ? $imageURLs[$res_id] : 'images/default_bg.jpg';

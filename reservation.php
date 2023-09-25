@@ -87,7 +87,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
           </div>
         </div>
         <div class="row d-flex">
-        <div class="col-md-4 ftco-animate img" style="background-image: url('<?php echo getRestaurantBackgroundImage($_GET['1']); ?>'); width: 300px; height: 550px;"></div>
+        <div class="col-md-4 ftco-animate img" style="background-image: url('<?php echo getRestaurantBackgroundImage($_GET['res_id']); ?>'); width: 300px; height: 550px;"></div>
           <div class="col-md-8 ftco-animate makereservation p-5 bg-light">
             
             <form action="choose-table.php" method="POST">

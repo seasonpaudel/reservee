@@ -223,7 +223,7 @@ include 'template/header.php'; ?>
     
   </body>
 </html>
-<?php } ?>
+<?php  ?>
 
 <script type="text/javascript">
  

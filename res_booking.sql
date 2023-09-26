@@ -171,11 +171,11 @@ CREATE TABLE `restaurant_chair` (
 --
 
 INSERT INTO `restaurant_chair` (`id`, `tbl_id`, `chair_no`) VALUES
-(24, 3, 'TBL-1-1'),
-(25, 3, 'TBL-1-2'),
-(26, 3, 'TBL-1-3'),
-(27, 3, 'TBL-1-4'),
-(28, 3, 'TBL-1-5'),
+(1, 1, 'TBL-1-1'),
+(2, 1, 'TBL-1-2'),
+(3, 1, 'TBL-1-3'),
+(4, 1, 'TBL-1-4'),
+(5, 1, 'TBL-1-5'),
 (29, 3, 'TBL-1-6'),
 (30, 4, 'TBL-2-1'),
 (31, 4, 'TBL-2-2'),

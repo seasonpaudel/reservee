@@ -80,7 +80,9 @@ if (!isset($_SESSION['isLoggedIn'])) {
 											<td><?php echo $r['booking_date']; ?></td>
 											<td><?php echo $r['booking_time']; ?></td>
 											<td><?php echo $r['bill']; ?> Rs.</td>
+											<td class="center hidden-phone">
 											<td class="center hidden-phone"></td>
+
 												<?php 
 													$status = $r['status'];
 													if ($status == 0) {

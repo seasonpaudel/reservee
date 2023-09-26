@@ -12,13 +12,13 @@ if (isset($_POST['reservation'])) {
 include 'template/header.php'; ?>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-  <body style="background-image:url('images/squares.png')">
+  <body style="background-image:url('images/bg_2.jpg')">
 
    <?php include 'template/nav-bar.php'; ?>
     <!-- END nav -->
 
     <section class="home-slider owl-carousel" style="height: 400px;">
-      <div class="slider-item" style="background-image: url('images/cover.jpg');" data-stellar-background-ratio="0.5">
+      <div class="slider-item" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">

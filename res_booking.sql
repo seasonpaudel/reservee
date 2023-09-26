@@ -149,7 +149,7 @@ INSERT INTO `menu_item` (`id`, `res_id`, `item_name`, `madeby`, `food_type`, `pr
 (15,1, 'Pork ribs', 'Pork', 'dinner', 950, 'ribs.jpg'),
 (16,3, 'Tonkatsu', 'Chicken','dinner', 550, 'tonkatsu.jpg'),
 (17,4, 'Peach tea', 'Peach', 'drink', 220, 'peach.jpg'),
-(18,5, 'Chocochip icecream','Whipped cream', 'dessert', 200, 'chocochip.jpg').
+(18,5, 'Chocochip icecream','Whipped cream', 'dessert', 200, 'chocochip.jpg'),
 (19,5, 'Juju dhau', 'Milk', 'dessert', 100, 'juju.jpg');
 
 

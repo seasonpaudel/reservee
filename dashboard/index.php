@@ -80,7 +80,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 											<td><?php echo $r['phone']; ?></td>
 											<td><?php echo $r['booking_date']; ?></td>
 											<td><?php echo $r['booking_time']; ?></td>
-											<td><?php echo $r['bill']; ?>Rs.</td>
+											<td>Rs.<?php echo $r['bill']; ?></td>
 											<td class="center hidden-phone">
 												
 												<?php 

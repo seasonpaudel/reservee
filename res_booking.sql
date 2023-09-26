@@ -69,7 +69,7 @@ CREATE TABLE `booking_details` (
 --
 
 INSERT INTO `booking_details` (`id`, `booking_id`, `res_id`, `c_id`, `make_date`, `make_time`, `name`, `phone`, `booking_date`, `booking_time`, `bill`, `status`, `reject`) VALUES
-(1, 12, 4, 8, '2023-05-08', '12:30:20pm', 'Jack', 987568978, '2023-05-09', '1:15:00pm', 970, 1, 0);
+(1, 1, 1, 8, '2023-10-01', '12:30:20pm', 'Jack', 987568978, '2023-09-26', '1:15:00pm', 970, 1, 0);
 
 -- --------------------------------------------------------
 

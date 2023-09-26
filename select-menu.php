@@ -56,12 +56,12 @@ include 'template/header.php'; ?>
                     <?php 
                       include 'dbCon.php';
                       $con = connect();
-                      $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Non-veg';";
+                      $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'non-veg';";
                       $result = $con->query($sql);
                       foreach ($result as $r) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r['image']; ?>);"></div>
+                      <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r['image']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half" style="width: calc(100% - 200px);">
                           <h3><?php echo $r['item_name']; ?></h3>
@@ -114,12 +114,12 @@ include 'template/header.php'; ?>
                 <div class="row">
                   <div class="col-lg-12">
                     <?php 
-                      $sql3 = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Drink';";
+                      $sql3 = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'drink';";
                       $result3 = $con->query($sql3);
                       foreach ($result3 as $r3) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r3['image']; ?>);"></div>
+                      <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r3['image']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3><?php echo $r3['item_name']; ?></h3>

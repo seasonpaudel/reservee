@@ -59,9 +59,11 @@ include 'template/header.php'; ?>
                       $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Non-veg';";
                       $result = $con->query($sql);
                       foreach ($result as $r) {
+                        $imageFile = ($r['food_type'] === 'Non-veg') ? 'pothot.jpg' : $r['image'];
+                        $imagePath = ($r['food_type'] === 'Non-veg') ? 'images/' : 'dashboard/item-image/';
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/images/<?php echo $r['pothot.jpg']; ?>);"></div>
+                      <div class="menu-img" style="background-image: url(<?php echo $imagePath . $imageFile; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half" style="width: calc(100% - 200px);">
                           <h3><?php echo $r['item_name']; ?></h3>
@@ -90,7 +92,7 @@ include 'template/header.php'; ?>
                       foreach ($result2 as $r2) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r2['image']; ?>);"></div>
+                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r2['image']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3><?php echo $r2['item_name']; ?></h3>

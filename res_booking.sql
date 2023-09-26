@@ -39,8 +39,8 @@ CREATE TABLE `booking_chair` (
 --
 
 INSERT INTO `booking_chair` (`id`, `booking_id`, `chair_id`, `chair_no`) VALUES
-(1, 11, 38, 'TBL-4-1'),
-(2, 12, 39, 'TBL-4-2');
+(1, 11, 15, 'TBL-4-1'),
+(2, 12, 16, 'TBL-4-2');
 
 -- --------------------------------------------------------
 

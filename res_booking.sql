@@ -264,15 +264,23 @@ CREATE TABLE `restaurant_tables` (
 --
 
 INSERT INTO `restaurant_tables` (`id`, `res_id`, `table_name`) VALUES
-(3, 4, 'TBL-1'),
-(4, 4, 'TBL-2'),
-(5, 4, 'TBL-3'),
-(6, 4, 'TBL-4'),
-(7, 5, 'TBL-1'),
-(8, 5, 'TBL-2'),
-(9, 5, 'TBL-3'),
-(10, 5, 'TBL-4'),
-(11, 5, 'TBL-1');
+(1, 1, 'TBL-1'),
+(2, 1, 'TBL-2'),
+(3, 1, 'TBL-3'),
+(4, 1, 'TBL-4'),
+(5, 2, 'TBL-1'),
+(6, 2, 'TBL-2'),
+(7, 2, 'TBL-3'),
+(8, 3, 'TBL-1'),
+(9, 3, 'TBL-2');
+(10, 3, 'TBL-3');
+(11, 4, 'TBL-1');
+(12, 4, 'TBL-2');
+(13, 4, 'TBL-3');
+(14, 5, 'TBL-1');
+(15, 5, 'TBL-2');
+(16, 5, 'TBL-3');
+
 
 --
 -- Indexes for dumped tables

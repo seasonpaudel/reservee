@@ -25,7 +25,7 @@ include 'template/header.php'; ?>
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center"  style="padding-bottom: 25%;">
               <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span>Menu</span></p>
-              <h1 class="mb-3">Our Exclusive Menu</h1>
+              <h1 class="mb-3"style="font-family: 'Courier New', Courier, monospace;">Our Exclusive Menu</h1>
             </div>
           </div>
         </div>

@@ -61,7 +61,7 @@ include 'template/header.php'; ?>
                       foreach ($result as $r) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                    <div class="menu-img" style="background-image: url('dashboard/item-image/pothot.jpg');"></div>
+                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r['pothot']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half" style="width: calc(100% - 200px);">
                           <h3><?php echo $r['item_name']; ?></h3>

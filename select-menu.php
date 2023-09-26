@@ -56,7 +56,7 @@ include 'template/header.php'; ?>
                     <?php 
                       include 'dbCon.php';
                       $con = connect();
-                      $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Fast Food';";
+                      $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Non-veg';";
                       $result = $con->query($sql);
                       foreach ($result as $r) {
                     ?>

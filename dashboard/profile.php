@@ -168,11 +168,11 @@ if (!isset($_SESSION['isLoggedIn'])) {
               <div class="form-group">
                 <div class="col-md-7">
                   <label class="col-md-4 control-label" for=
-                  "CustomerAddress">Location:</label>
+                  "CustomerAddress">Cuisines:</label>
 
                   <div class="col-md-8">
                      <select class="form-control " name="area" required="">
-                            <option value=""> -Select Restaurant Area- </option>
+                            <option value=""> -Select Cuisines- </option>
                             <?php   
                               $sql = "SELECT * FROM `cuisines`;";
                               $result = $con->query($sql);

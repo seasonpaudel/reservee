@@ -74,17 +74,17 @@ if (!isset($_SESSION['isLoggedIn'])) {
 										foreach ($result as $r) {
 										?>
 										<tr class="gradeX">
-											<td class="center hidden-phone"><?php echo $count; ?></td> 
-											<td><?php echo $r['name']; ?></td>
-											<td><?php echo $r['phone']; ?></td>
-											<td><?php echo $r['booking_date']; ?></td>
-											<td><?php echo $r['booking_time']; ?></td>
-											<td><?php echo $r['bill']; ?> Rs.</td>
-											<td class="center hidden-phone">
-												<?php 
-													$status = $r['status'];
-													if ($status == 0) {
-												?>
+    <td class="center hidden-phone"><?php echo $count; ?></td>
+    <td><?php echo $r['name']; ?></td>
+    <td><?php echo $r['phone']; ?></td>
+    <td><?php echo $r['booking_date']; ?></td>
+    <td><?php echo $r['booking_time']; ?></td>
+    <td><?php echo $r['bill']; ?> Rs.</td>
+    <td class="center hidden-phone">
+        <?php 
+            $status = $r['status'];
+            if ($status == 0) {
+        ?>
 												<p class="text-danger">Rejected</p>
 												<?php }else{ ?>
 													<p class="text-success">Confirmed</p>

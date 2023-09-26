@@ -85,7 +85,7 @@ include 'template/header.php'; ?>
                 <div class="row">
                   <div class="col-lg-12">
                     <?php 
-                      $sql2 = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Dessert';";
+                      $sql2 = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'dinner';";
                       $result2 = $con->query($sql2);
                       foreach ($result2 as $r2) {
                     ?>

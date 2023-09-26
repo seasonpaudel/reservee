@@ -12,7 +12,7 @@ if (isset($_POST['reservation'])) {
 include 'template/header.php'; ?>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-  <body style="background-image:url('images/bg_2.jpg')">
+  <body style="background-image:url('images/whitee.jpg')">
 
    <?php include 'template/nav-bar.php'; ?>
     <!-- END nav -->

@@ -1,5 +1,17 @@
 <!-- select-menu.php -->
 <?php 
+function getMenuItemImage($menu_item_id) {
+  $imageURLs = [
+      4 => 'images/pothot.jpg',
+      5 => 'images/pizza.jpg',
+      6 => 'images/sushi.jpg',
+     
+  ];
+
+  return isset($imageURLs[$menu_item_id]) ? $imageURLs[$menu_item_id] : 'images/default_menu_item.jpg';
+}
+
+
 if (isset($_POST['selectChair'])) {
   $res_id = $_POST['res_id'];
   $reservation_name = $_POST['reservation_name'];
@@ -59,11 +71,9 @@ include 'template/header.php'; ?>
                       $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Non-veg';";
                       $result = $con->query($sql);
                       foreach ($result as $r) {
-                        $imageFile = ($r['food_type'] === 'Non-veg') ? 'pothot.jpg' : $r['image'];
-                        $imagePath = ($r['food_type'] === 'Non-veg') ? 'images/' : 'dashboard/item-image/';
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(<?php echo $imagePath . $imageFile; ?>);"></div>
+                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r['image']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half" style="width: calc(100% - 200px);">
                           <h3><?php echo $r['item_name']; ?></h3>

@@ -1,15 +1,15 @@
 <!-- select-menu.php -->
 <?php 
-function getMenuItemImage($menu_item_id) {
+function getFoodTypeImage($food_type) {
   $imageURLs = [
-      4 => 'images/pothot.jpg',
-      5 => 'images/pizza.jpg',
-      6 => 'images/sushi.jpg',
-     
+      'Non-veg' => 'images/pothot.jpg',
+      'Non-veg' => 'images/pizza.jpg',
+      'sushi' => 'images/sushi.jpg',
   ];
 
-  return isset($imageURLs[$menu_item_id]) ? $imageURLs[$menu_item_id] : 'images/default_menu_item.jpg';
+  return isset($imageURLs[$food_type]) ? $imageURLs[$food_type] : 'images/default_menu_item.jpg';
 }
+?>
 
 
 if (isset($_POST['selectChair'])) {

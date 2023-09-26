@@ -53,7 +53,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
 									<thead>
 										<tr>
 											<th>No</th>
-											
 											<th>Name</th>
 											<th>Phone</th>
 											<th>Date</th>
@@ -76,8 +75,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 										?>
 										<tr class="gradeX">
 											<td class="center hidden-phone"><?php echo $count; ?></td>
-											<td class="center hidden-phone"><?php echo isset($r['transactionid']) ? $r['transactionid'] : ''; ?></td>
-
+										
 											<td><?php echo $r['name']; ?></td>
 											<td><?php echo $r['phone']; ?></td>
 											<td><?php echo $r['booking_date']; ?></td>

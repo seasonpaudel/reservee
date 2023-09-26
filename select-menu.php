@@ -90,7 +90,7 @@ include 'template/header.php'; ?>
                       foreach ($result2 as $r2) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-image/<?php echo $r2['image']; ?>);"></div>
+                    <div class="menu-img" style="background-image: url('images/<?php echo $r['image']; ?>');"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3><?php echo $r2['item_name']; ?></h3>
@@ -119,7 +119,7 @@ include 'template/header.php'; ?>
                       foreach ($result3 as $r3) {
                     ?>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r3['image']; ?>);"></div>
+                    <div class="menu-img" style="background-image: url('images/<?php echo $r['image']; ?>');"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3><?php echo $r3['item_name']; ?></h3>

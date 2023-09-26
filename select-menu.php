@@ -44,7 +44,7 @@ include 'template/header.php'; ?>
         <div class="col-md-8 dish-menu">
 
             <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Fast Food</a>
+              <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span> Main Course</a>
               <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-cutlery"></span> Dessert</a>
               <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span> Drinks</a>
             </div>
@@ -56,7 +56,7 @@ include 'template/header.php'; ?>
                     <?php 
                       include 'dbCon.php';
                       $con = connect();
-                      $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Fast Food';";
+                      $sql = "SELECT * FROM `menu_item` WHERE res_id = '$res_id' AND food_type = 'Non-veg';";
                       $result = $con->query($sql);
                       foreach ($result as $r) {
                     ?>

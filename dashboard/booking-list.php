@@ -53,7 +53,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
 									<thead>
 										<tr>
 											<th>No</th>
-											
 										     <th>Name</th>
 											<th>Phone</th>
 											<th>Date</th>

@@ -1240,5 +1240,3 @@ class SMTP
         }
 
         return false;
-    }
-}

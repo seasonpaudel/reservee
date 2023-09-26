@@ -64,8 +64,8 @@ include 'template/header.php'; ?>
                       <div class="menu-img" style="background-image: url(dashboard/item-images/<?php echo $r['image']; ?>);"></div>
                       <div class="text d-flex">
                         <div class="one-half" style="width: calc(100% - 200px);">
-                          <h3><?php echo $r1['item_name']; ?></h3>
-                          <p><span><?php echo $r1['madeby']; ?></p>
+                          <h3><?php echo $r['item_name']; ?></h3>
+                          <p><span><?php echo $r['madeby']; ?></p>
                         </div>
                         <div class="one-forth" style="text-align: center;">
                           <span class="price"><?php echo $r['price']; ?></span><br>

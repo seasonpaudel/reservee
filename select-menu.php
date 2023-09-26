@@ -1,17 +1,5 @@
 <!-- select-menu.php -->
 <?php 
-function getFoodTypeImage($food_type) {
-  $imageURLs = [
-      'Non-veg' => 'images/pothot.jpg',
-      'Non-veg' => 'images/pizza.jpg',
-      'sushi' => 'images/sushi.jpg',
-  ];
-
-  return isset($imageURLs[$food_type]) ? $imageURLs[$food_type] : 'images/default_menu_item.jpg';
-}
-?>
-
-
 if (isset($_POST['selectChair'])) {
   $res_id = $_POST['res_id'];
   $reservation_name = $_POST['reservation_name'];
@@ -223,7 +211,7 @@ include 'template/header.php'; ?>
     
   </body>
 </html>
-<?php  ?>
+<?php } ?>
 
 <script type="text/javascript">
  

@@ -97,7 +97,7 @@
                         </div>
                        <div class="form-group">
                           <select class="form-control " name="area" required="">
-                            <option value=""> -Select Restaurant Area- </option>
+                            <option value=""> -Select Cuisine- </option>
                             <?php 
                               include 'dbCon.php';
                               $con = connect();

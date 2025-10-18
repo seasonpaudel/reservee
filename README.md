@@ -62,11 +62,11 @@ Simplify the restaurant table reservation process through an easy-to-use web app
 ---
 
 ## 🚀 Future Enhancements
-- 🌍 Expand to multiple regions and restaurant branches.  
-- 💳 Integrate secure online payment gateways.  
-- 🔄 Real-time updates on table availability.  
-- 🧑‍🍳 Add staff roles like waiter, chef, and cashier.  
-- 🎁 Introduce loyalty programs and special offers.  
+-  Expand to multiple regions and restaurant branches.  
+-  Integrate secure online payment gateways.  
+-  Real-time updates on table availability.  
+-  Add staff roles like waiter, chef, and cashier.  
+-  Introduce loyalty programs and special offers.  
 
 ---
 

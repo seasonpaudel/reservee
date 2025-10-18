@@ -1,2 +1,58 @@
-# Restaurant-Table-Reservation
-A restaurant table booking system, by which customer can book a table and can order food menu for their meal, from any registered restaurant of this system. For this system there are two types of user. First one is restaurant authority, at first they have to register to this system and have to provide their food menu and price for the menu. And the second one is the customer for the restaurant. To book a table of a restaurant, customer must have to register at this system. To register this system customer have to provide their name, phone number and email. Then they will be able to choose a restaurant and select a table for the restaurant. They also have to choose the food menu from that restaurant's provide menu. They also have to provide the time when they want to come to take their meal.
+# 🏨 Reservé – Online Restaurant Table Reservation System
+
+## 📘 Overview  
+**Reservé** is a web-based restaurant table and menu reservation system developed as an **academic project** for the Bachelor of Computer Engineering (Pokhara University, 2023).  
+The system allows customers to browse restaurants, explore menus, and reserve tables online, while restaurant administrators can manage and monitor reservations through an admin dashboard.
+
+> ⚠️ **Disclaimer:**  
+> This project was developed solely for **academic and learning purposes**.  
+> Some parts of the code or design may have been referenced from external educational resources and adapted for this work.  
+> It is **not intended for commercial deployment**.
+
+---
+
+## ✨ Features  
+- 🔐 User registration and login (customer and admin)  
+- 🍽️ Browse restaurants and view menus  
+- 🕒 Reserve tables for specified date and time  
+- 📩 Booking confirmation and management  
+- 🧾 Admin dashboard for viewing and approving reservations  
+- 💾 Secure data storage using MySQL  
+
+---
+
+## 🛠️ Tech Stack  
+
+| Layer        | Technology Used                 |
+|--------------|---------------------------------|
+| **Frontend** | HTML, CSS, Bootstrap, JavaScript |
+| **Backend**  | PHP                             |
+| **Database** | MySQL                           |
+| **IDE / Host** | Visual Studio Code, XAMPP (Localhost) |
+
+---
+
+## 🧩 System Overview  
+Reservé follows a **client-server architecture** with distinct modules for different roles:  
+- Customer module: allows registration, browsing restaurants, selecting menu and tables, and making reservations  
+- Admin module: allows restaurant authority to manage menus, accept bookings, and view reports  
+- MySQL database: maintains user data, restaurant entries, menus, bookings securely  
+
+---
+
+## 🧪 Testing  
+- ✅ **Unit Testing:** Verified functionality for user login, reservation creation, and menu display  
+- ✅ **System Testing:** Tested full booking flow from customer selection to admin approval  
+- ⚡ **Performance:** Average response time observed under 2 seconds for standard use case  
+
+---
+
+## 🚀 Future Improvements  
+- 🌍 Support for multi-region/multi-city listings of restaurants  
+- 💳 Integration of online payment gateway  
+- 🔄 Real-time table availability updates and notifications  
+- 🧑‍🍳 Additional user roles: waiter, chef, cashier  
+- 🎯 Loyalty rewards system for frequent users  
+
+---
+
